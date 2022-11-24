@@ -1,0 +1,673 @@
+<!DOCTYPE html> <!--Tells the browser to use the most up to date version of HTML.-->
+
+<html lang="en" dir="ltr"> <!-- Language = English, Direction = left to right. -->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Juggling Newsletter - Records </title> <!-- The title of the webpage. -->
+    <meta name="description" content="Your #1 resource for all things juggling!">       <!-- Description of web page-->
+    <meta name="author" content="Ricco Visser ">   <!-- Author -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links to the css page. -->
+    <script src="script.js" defer></script> <!-- Links to the javascript page. Because we defer, it works as if we placed the script below our body. Script loads immediately instead of waiting for all the html to load. -->
+    <meta name="refresh" content="600"> <!--Refresh content every 600 seconds-->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+  </head>
+
+  <body>
+
+    <header class="main-header"> <!-- Everything in the header-->
+      <nav class="nav main-nav"> <!-- Navigation Section for header-->
+        <ul> <!-- Unordered List-->
+          <!-- List Items: -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="records.html">World Records</a></li> 
+          <li><a href ="jugglers.html">Jugglers</a></li>
+          <li><a href ="patterns.html">Patterns</a></li> 
+          <li><a href ="props.html">Props</a></li>
+        </ul>
+      </nav>  <!-- End of navigation section for header-->
+      <h1 class = "newsletter newsletter-large"> The Juggling Newsletter</h1> <!-- The main title, in the header-->
+      <!-- Change font size - Increase web accessibility. Located in header for easy visibility.-->
+        <div class="adjust-a"> <!-- Container for "A's" -->
+          <h3 class="small-a">A</h3>
+          <h2 class="medium-a">A</h2>
+          <h1 class="big-a">A</h1>
+        </div>  <!-- End of "A's" container-->
+    </header> <!-- End of header-->
+
+    <!-- Information and inspiration from "https://www.juggling-records.com/world_records" and "https://juggle.fandom.com/wiki/World_records"  -->
+    <section class="records-section"> <!-- Container section of all of records.html. (Excluding header and footer)-->
+      <h1>World Records</h1>
+      <p> A list of the main world records of juggling! Fancy a go at one of them?</p>
+
+      <!-- Overall  Ball Records (default) -->
+      <div> <!-- Ball records div-->
+        <h2 class="balls"> Ball World Records</h2>
+        <button type="button" class="btn ball-overall-button">Overall</button>
+        <button type="button" class="btn ball-onehand-button">One handed</button>
+
+        <table class="wr-table ball-overall reveal"> <!-- Ball records table-->
+          <col>
+          <tr class="head"> <!-- 5 columns-->
+            <th>#</th>
+            <th>Juggler</th>
+            <th>Record</th>
+            <th>Year</th>
+            <th>Video</th>
+          </tr>
+          <tr> <!-- table row-->
+            <td>5b</td>
+            <td><img src="images/flags/hungary.png" alt="hungary flag" title="Hungary"> Bence Ónodi</td>
+            <td>3h 44m 45s</td>
+            <td>2022</td>
+            <td><a href="https://youtu.be/dmLXam4Ws1Y" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td> <!-- Logo of video with external link-->
+          </tr>
+          <tr> <!-- table row-->
+            <td>6b</td>
+            <td><img src="images/flags/chile.png" alt="chile flag" title="Chile"> Adolfo Esteban Cardenas</td>
+            <td>25m 17s</td>
+            <td>2019</td>
+            <td><a href="https://youtu.be/g4MOmfdLIq8" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>7b</td>
+            <td><img src="images/flags/chile.png" alt="chile flag" title="Chile"> Adolfo Esteban Cardenas</td>
+            <td>16m 25s</td>
+            <td>2019</td>
+            <td><a href="https://youtu.be/aNDZjK03w_s" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>8b</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"><a href="jugglers.html#anthony-gatto"> Anthony Gatto</a></td>
+            <td>1m 13s</td>
+            <td class="bold-cell">2006</td>
+            <td><a href="https://youtu.be/i9UzL53nRYY" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>9b</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"><a href="jugglers.html#anthony-gatto"> Anthony Gatto</a></td>
+            <td>55s</td>
+            <td class="bold-cell">2006</td>
+            <td><a href="https://youtu.be/XHG5Rs2ft1A" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>10b</td>
+            <td><img src="images/flags/uk.png" alt="united kingdom flag" title="UK"> Tom Whitfield</td>
+            <td>40c</td>
+            <td>2021</td>
+            <td><a href="https://www.instagram.com/tv/CXymnkblFXV" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>11b</td>
+            <td><img src="images/flags/uk.png" alt="united kingdom flag" title="UK"> Alex Barron</td>
+            <td>33c</td>
+            <td>2017</td>
+            <td><a href="https://youtu.be/YAtR1lTO8XA" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>12b</td>
+            <td><img src="images/flags/uk.png" alt="united kingdom flag" title="UK"> Alex Barron</td>
+            <td>20c</td>
+            <td>2017</td>
+            <td><a href="https://youtu.be/SLkPJ1NxiSI" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>13b</td>
+            <td><img src="images/flags/uk.png" alt="united kingdom flag" title="UK"> Alex Barron</td>
+            <td>15c</td>
+            <td>2013</td>
+            <td><a href="https://youtu.be/gXBRf_WFt08" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>14b</td>
+            <td><img src="images/flags/uk.png" alt="united kingdom flag" title="UK"> Alex Barron</td>
+            <td>14c</td>
+            <td>2017</td>
+            <td><a href="https://youtu.be/WK6AlhTjUbY" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+        </table> <!-- End of ball records table -->
+
+        <!-- One Handed Ball Records (hidden) -->
+        <table class="wr-table ball-onehand hide"> <!-- Ball one-handed records table-->
+          <col>
+          <tr class="head"> <!-- 5 columns-->
+            <th>#</th>
+            <th>Juggler</th>
+            <th>Record</th>
+            <th>Year</th>
+            <th>Video</th>
+          </tr>
+          <tr> <!-- table row-->
+            <td>3b</td>
+            <td><img src="images/flags/chile.png" alt="chile flag" title="Chile"> Adolfo Esteban Cardenas</td>
+            <td>25m 17s</td>
+            <td>2019</td>
+            <td><a href="https://youtu.be/g4MOmfdLIq8" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>4b</td>
+            <td><img src="images/flags/uk.png" alt="united kingdom flag" title="United Kingdom"> Tom Whitfield</td>
+            <td>1m 48s</td>
+            <td>2021</td>
+            <td><a href="https://youtu.be/uZebQnOtLM8" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>5b</td>
+            <td><img src="images/flags/uk.png" alt="united kingdom flag" title="United Kingdom"> Tom Whitfield</td>
+            <td>53c</td>
+            <td>2020</td>
+            <td><a href="https://www.instagram.com/p/CHL3KCIgjwn" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>6b</td>
+            <td><img src="images/flags/uk.png" alt="united kingdom flag" title="United Kingdom"> Tom Whitfield & <img src="images/flags/usa.png" alt="usa flag" title="USA"> Dylan Tweed</td>
+            <td>19c</td>
+            <td>2018 & 2019</td>
+            <td><a href="https://www.instagram.com/p/BsFroLzigi-/" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a> & <a href="https://www.instagram.com/p/B4LMpglgbP6/" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>7b</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"> Dylan Tweed</td>
+            <td>10c</td>
+            <td>2019</td>
+            <td><a href="https://www.instagram.com/p/BwkgjQIglLJ/" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+        </table> <!-- End of ball one-handed records table-->
+      </div> <!-- End of ball records div-->
+
+      <div id="club-WR"> <!-- club records div -->
+        <h2> Club World Records</h2>
+        <button type="button" class="btn club-overall-button">Overall</button>
+        <button type="button" class="btn club-onehand-button">One handed</button>
+
+        <!-- Overall Club Records (default) -->
+        <table class="wr-table club-overall reveal"> <!-- clubs records table-->
+          <col>
+          <tr class="head"> <!-- 5 columns-->
+            <th>#</th>
+            <th>Juggler</th>
+            <th>Record</th>
+            <th>Year</th>
+            <th>Video</th>
+          </tr>
+          <tr> <!-- table row-->
+            <td>3c</td>
+            <td><img src="images/flags/russia.png" alt="russia flag" title="Russia"> Alexandr Inozemtzev</td>
+            <td>5h 1m 51s</td>
+            <td>2022</td>
+            <td><a href="https://www.youtube.com/watch?v=P8RbbxCCv0c" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>4c</td>
+            <td><img src="images/flags/russia.png" alt="russia flag" title="Russia"> Alexandr Inozemtzev</td>
+            <td>1h 15m 9s</td>
+            <td>2021</td>
+            <td><a href="https://youtu.be/cPi2j-QM5Tc?t=10" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>5c</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"> Christopher Stoinev</td>
+            <td>47m 24s</td>
+            <td>2017</td>
+            <td><a href="https://youtu.be/tnEdPccVErc" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>6c</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"><a href="jugglers.html#anthony-gatto">Anthony Gatto</a></td>
+            <td>7m 38s</td>
+            <td class="bold-cell">2005</td>
+            <td><a href="https://youtu.be/fZMHZDsla4s" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>7c</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"><a href="jugglers.html#anthony-gatto">Anthony Gatto</a></td>
+            <td>4m 24s</td>
+            <td class="bold-cell">2005</td>
+            <td><a href="https://youtu.be/Juo1FhCoxbU" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>8c</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"><a href="jugglers.html#anthony-gatto">Anthony Gatto</a> & <img src="images/flags/italy.png" alt="italy flag"> Willy Colombaioni</td>
+            <td>16c</td>
+            <td><b>2005</b> & 2015</td>
+            <td><a href="https://youtu.be/riyqrC1qrZ8?t=93" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a> & <a href="https://youtu.be/wKAObxdsQwc?t=7" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>9c</td>
+            <td><img src="images/flags/norway.png" alt="norway flag" title="Norway"> Eivind Dragsjo</td>
+            <td>11c</td>
+            <td>2016</td>
+            <td><a href="https://youtu.be/1E82gmtKT5k" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+        </table> <!-- end of clubs records table-->
+
+        <!-- Club One Handed Records (hidden) -->
+        <table class="wr-table club-onehand hide">  <!-- clubs one-handed records table-->
+          <col>
+          <tr class="head"> <!-- 5 columns-->
+            <th>#</th>
+            <th>Juggler</th>
+            <th>Record</th>
+            <th>Year</th>
+            <th>Video</th>
+          </tr> 
+          <tr> <!-- table row-->
+            <td>3c</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"><a href="jugglers.html#anthony-gatto">Anthony Gatto</a></td>
+            <td>7m 38s</td>
+            <td class="bold-cell">2005</td>
+            <td><a href="https://youtu.be/fZMHZDsla4s" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>4c</td>
+            <td><img src="images/flags/italy.png" alt="italy flag" title="Italy"> Willy Colombaioni</td>
+            <td>20c</td>
+            <td>2017</td>
+            <td><a href="https://www.facebook.com/willy.colombaioni/videos/1438507586265702/" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>5c</td>
+            <td><img src="images/flags/italy.png" alt="italy flag" title="Italy"> Willy Colombaioni</td>
+            <td>6c</td>
+            <td>2017</td>
+            <td><a href="https://youtu.be/bHsSCnhSkrQ?t=9" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          </table> <!-- end of clubs one-handed records table-->
+      </div> <!-- end of clubs records div-->
+
+      <div id="ring-WR"> <!-- rings records div -->
+        <h2> Ring World Records</h2>
+        <button type="button" class="btn ring-overall-button">Overall</button>
+        <button type="button" class="btn ring-onehand-button">One handed</button>
+
+         <!-- Ring Overall Records (default) -->
+        <table class="wr-table ring-overall reveal"> <!-- rings records table-->
+          <col>
+          <tr class="head"> <!-- 5 columns-->
+            <th>#</th>
+            <th>Juggler</th>
+            <th>Record</th>
+            <th>Year</th>
+            <th>Video</th>
+          </tr>
+          <tr> <!-- table row-->
+            <td>3r</td>
+            <td><img src="images/flags/japan.png" alt="japan flag" title="Japan"> Kan Kusume</td>
+            <td>2h 21m 53s</td>
+            <td>2020</td>
+            <td><a href="https://youtu.be/5n1fnn3U8BM" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>4r</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"> Robert LeBoeuf</td>
+            <td>1h 20m 27s</td>
+            <td>2021</td>
+            <td><a href="https://youtu.be/G-fZyDzKn08?t=16" target="_blank" ><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>5r</td>
+            <td><img src="images/flags/germany.png" alt="germany flag" title="Germany"> Maximilian Kuschmierz</td>
+            <td>23m 29s</td>
+            <td>2022</td>
+            <td><a href="https://youtu.be/_Y5z2eIN73U" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>6r</td>
+            <td><img src="images/flags/norway.png" alt="norway flag" title="Norway"> Eivind Dragsjo</td>
+            <td>6m 37s</td>
+            <td>2022</td>
+            <td><a href="https://youtu.be/OvD_hlcDgAk" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>7r</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"><a href="jugglers.html#anthony-gatto">Anthony Gatto</a></td>
+            <td>15m 6s</td>
+            <td class="bold-cell">2006</td>
+            <td><a href="https://youtu.be/rOUmijTJAag" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>8r</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"><a href="jugglers.html#anthony-gatto">Anthony Gatto</a></td>
+            <td>1m 17s</td>
+            <td class="bold-cell">1989</td>
+            <td><a href="https://www.youtube.com/watch?v=1T6dsOykSYM#t=1h2m1s" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>9r</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"><a href="jugglers.html#anthony-gatto">Anthony Gatto</a></td>
+            <td>235c</td>
+            <td class="bold-cell">2005</td>
+            <td><a href="https://youtu.be/QioKtsZZ86I?t=310" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>10r</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"><a href="jugglers.html#anthony-gatto">Anthony Gatto</a></td>
+            <td>47c</td>
+            <td class="bold-cell">2005</td>
+            <td><a href="https://www.youtube.com/watch?v=v-Tn7Q0aJ2A&feature=youtu.be&t=514" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>11r</td>
+            <td><img src="images/flags/ukraine.png" alt="ukraine flag" title="Ukraine"> Daniel Lysenko</td>
+            <td>21c</td>
+            <td>2020</td>
+            <td><a href="https://youtu.be/3eC4qvalETA" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>12r</td>
+            <td><img src="images/flags/italy.png" alt="italy flag" title="Italy"> Willy Colombaioni</td>
+            <td>16c</td>
+            <td>2016</td>
+            <td><a href="https://youtu.be/FhoGHn3M-PI?t=14" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+        </table> <!-- end of rings records table-->
+
+        <!-- Ring One Handed Records (hidden) -->
+        <table class="wr-table ring-onehand hide"> <!-- rings one-handed records table-->
+          <col>
+          <tr class="head"> <!-- 5 columns-->
+            <th>#</th>
+            <th>Juggler</th>
+            <th>Record</th>
+            <th>Year</th>
+            <th>Video</th>
+          </tr>
+          <tr> <!-- table row-->
+            <td>3r</td>
+            <td><img src="images/flags/italy.png" alt="italy flag" title="Italy"> Willy Colombaioni</td>
+            <td>6m 16s</td>
+            <td>2016</td>
+            <td><a href="https://www.facebook.com/willy.colombaioni/videos/997388837044248/" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>4r</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"><a href="jugglers.html#anthony-gatto">Anthony Gatto</a></td>
+            <td>1m 17s</td>
+            <td class="bold-cell">1989</td>
+            <td><a href="https://youtu.be/1T6dsOykSYM?t=3721" target="_blank" ><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>5r</td>
+            <td><img src="images/flags/italy.png" alt="italy flag" title="Italy"> Willy Colombaioni</td>
+            <td>36c</td>
+            <td>2019</td>
+            <td><a href="https://www.instagram.com/p/B5Z6ATwiXJ5/" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>6r</td>
+            <td><img src="images/flags/italy.png" alt="italy flag" title="Italy"> Willy Colombaioni</td>
+            <td>13c</td>
+            <td>2018</td>
+            <td><a href="https://www.instagram.com/p/Bpgwxu9ij9G/" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>7r</td>
+            <td><img src="images/flags/italy.png" alt="italy flag" title="Italy"> Willy Colombaioni</td>
+            <td>9c</td>
+            <td>2017</td>
+            <td><a href="https://youtu.be/dn2ClilGF-8?t=91" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+        </table>  <!-- end of rings one-handed records table-->
+      </div>  <!-- end of rings records div-->
+
+      <div id="bounce-WR"> <!-- bounce records div-->
+        <h2 class="bounce-header"> Bounce World Records</h2>
+        <button type="button" class="btn force-bounce-button">Force Bounce</button>
+        <button type="button" class="btn lift-bounce-button">Lift Bounce</button>
+
+        <!-- Force Bounce Records (default) -->
+        <table class="wr-table force-bounce reveal"> <!-- force-bounce records table -->
+          <col>
+          <tr class="head"> <!-- 5 columns-->
+            <th>#</th>
+            <th>Juggler</th>
+            <th>Record</th>
+            <th>Year</th>
+            <th>Video</th>
+          </tr>
+          <tr> <!-- table row-->
+            <td>5b</td>
+            <td><img src="images/flags/chile.png" alt="chile flag" title="Chile"> Oscar Carrillo</td>
+            <td>1h 13m 37s</td>
+            <td>2022</td>
+            <td><a href="https://www.youtube.com/watch?v=fFNAPWO1jZI" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>6b</td>
+            <td><img src="images/flags/chile.png" alt="chile flag" title="Chile"> Oscar Carrillo</td>
+            <td>12m 10s</td>
+            <td>2022</td>
+            <td><a href="https://www.youtube.com/watch?v=uBbKXVIXhzo" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>7b</td>
+            <td><img src="images/flags/russia.png" alt="russia flag" title="Russia"> Konstantin Kulyak</td>
+            <td>7m</td>
+            <td>2021</td>
+            <td><a href="https://www.youtube.com/watch?v=Bq7DehExTsM" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>8b</td>
+            <td><img src="images/flags/czech republic.png" alt="czech republic flag" title="Czech Republic"><a href="jugglers.html#alan-sulc"> Alan Sulc</a></td>
+            <td>114c</td>
+            <td>2011</td>
+            <td><a href="http://www.youtube.com/watch?v=dAqgHePnvzI#t=5m2s" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>9b</td>
+            <td><img src="images/flags/czech republic.png" alt="czech republic flag" title="Czech Republic"><a href="jugglers.html#alan-sulc"> Alan Sulc</a></td>
+            <td>157c</td>
+            <td>2022</td>
+            <td><a href="https://www.instagram.com/p/CYM3tZkFKu8/" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>10b</td>
+            <td><img src="images/flags/czech republic.png" alt="czech republic flag" title="Czech Republic"><a href="jugglers.html#alan-sulc"> Alan Sulc</a></td>
+            <td>18c</td>
+            <td>2017</td>
+            <td><a href="https://www.instagram.com/p/BO-9_rKhfzD8WxijieLywdnZ3kmPeer8JLEa980/" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>12b</td>
+            <td><img src="images/flags/czech republic.png" alt="czech republic flag" title="Czech Republic"><a href="jugglers.html#alan-sulc"> Alan Sulc</a></td>
+            <td>12c</td>
+            <td class="bold-cell">2008</td>
+            <td><a href="http://youtu.be/17E9qfQu9LQ?t=58s" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+        </table> <!-- end of force-bounce records table -->
+
+        <!-- Lift Bounce Records (hidden) -->
+        <table class="wr-table lift-bounce hide"> <!-- lift-bounce records table-->
+          <col>
+          <tr class="head"> <!-- 5 columns-->
+            <th>#</th>
+            <th>Juggler</th>
+            <th>Record</th>
+            <th>Year</th>
+            <th>Video</th>
+          </tr>
+          <tr> <!-- table row-->
+            <td>3b</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"> Bill Coad</td>
+            <td>3h 45m 13s</td>
+            <td>2019</td>
+            <td><a href="https://www.youtube.com/watch?v=WW0vMS_5Ndw" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>4b</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"> Bill Coad</td>
+            <td>2h 0m 1s</td>
+            <td>2019</td>
+            <td><a href="https://www.youtube.com/watch?v=F51MdVsVgno" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>5b</td>
+            <td><img src="images/flags/usa.png" alt="usa flag" title="USA"> Liam Ryan-O'Flaherty</td>
+            <td>56m 9s</td>
+            <td>2019</td>
+            <td><a href="https://www.youtube.com/watch?v=gRNquU4_vmU" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>6b</td>
+            <td><img src="images/flags/germany.png" alt="germany flag" title="Germany"> Jonas Nürge </td>
+            <td>25m 44s</td>
+            <td>2021</td>
+            <td><a href="https://www.youtube.com/watch?v=yIURTSInTiw" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>7b</td>
+            <td><img src="images/flags/finland.png" alt="finland flag" title="Finland"> Jukka Sairanen</td>
+            <td>19m 30s</td>
+            <td>2021</td>
+            <td><a href="https://www.youtube.com/watch?v=3F3NJN-2hpA" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>8b</td>
+            <td><img src="images/flags/italy.png" alt="italy flag" title="Italy"> Tyron Colombaioni</a></td>
+            <td>1m 59s</td>
+            <td>2019</td>
+            <td><a href="https://youtu.be/RVYj_2S5ecQ" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>9b</td>
+            <td><img src="images/flags/china.png" alt="china flag" title="China"> Cao Kai</a></td>
+            <td>1m 7s</td>
+            <td>2021</td>
+            <td><a href="https://www.youtube.com/watch?v=1tAVUXwDTwo" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>10b</td>
+            <td><img src="images/flags/norway.png" alt="norway flag" title="Norway">Mathias Ramfelt </a></td>
+            <td>51c</td>
+            <td>2017</td>
+            <td><a href="https://vimeo.com/248024573" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>11b</td>
+            <td><img src="images/flags/israel.png" alt="israel flag" title="Israel"><a href="jugglers.html#eden-zak">Eden Zak</a></td>
+            <td>18c</td>
+            <td>2017</td>
+            <td><a href="https://youtu.be/1UB8kXLiiKM" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+        </table>  <!-- end of lift-bounce records table-->
+      </div>  <!-- end of bounce records div-->
+
+      <div id="diabolo-WR"> <!-- diabolo records div-->
+        <h2> Diabolo World Records</h2>
+        <button type="button" class="btn low-diabolo-button">Low Diabolo</button>
+        <button type="button" class="btn high-diabolo-button">High Diabolo</button>
+
+        <!-- Low Diabolo Records (default) -->
+        <table class="wr-table low-diabolo reveal"> <!-- low diabolo records table-->
+          <col>
+          <tr class="head"> <!-- 5 columns-->
+            <th>#</th>
+            <th>Juggler</th>
+            <th>Record</th>
+            <th>Year</th>
+            <th>Video</th>
+          </tr>
+          <tr> <!-- table row-->
+            <td>3d</td>
+            <td><img src="images/flags/belgium.png" alt="belgium flag" title="Belgium"> Damian Kubitzki</td>
+            <td>1h 5m 48s</td>
+            <td>2020</td>
+            <td><a href="https://www.youtube.com/watch?v=ouwpddLxupE" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>4d</td>
+            <td><img src="images/flags/poland.png" alt="poland flag" title="Poland"> Ronnie Slowinski</td>
+            <td>8m 24s</td>
+            <td>2020</td>
+            <td><a href="https://youtu.be/2pwO0LGN5jc" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>5d</td>
+            <td><img src="images/flags/poland.png" alt="poland flag" title="Poland"> Ronnie Slowinski</td>
+            <td>106c</td>
+            <td>2018</td>
+            <td><a href="https://youtu.be/z3FEpJ4XkF8" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>6d</td>
+            <td><img src="images/flags/china.png" alt="china flag" title="China"> Pen Zen</td>
+            <td>19c</td>
+            <td>2018</td>
+            <td><a href="https://www.youtube.com/watch?v=tp1dN0z_clA" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+        </table> <!-- end of low diabolo records table-->
+
+        <!-- High Diabolo Records (hidden) -->
+        <table class="wr-table high-diabolo hide"> <!-- high diabolo records table-->
+          <col>
+          <tr class="head"> <!-- 5 columns-->
+            <th>#</th>
+            <th>Juggler</th>
+            <th>Record</th>
+            <th>Year</th>
+            <th>Video</th>
+          </tr>
+          <tr> <!-- table row-->
+            <td>3d</td>
+            <td><img src="images/flags/belgium.png" alt="belgium flag" title="Belgium"><a href="jugglers.html#pieter-slachmuylders">Pieter Slachmuylders</a></td>
+            <td>5m 43s</td>
+            <td>2012</td>
+            <td><a href="http://www.youtube.com/watch?v=EBiYmEKaT5Y" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>4d</td>
+            <td><img src="images/flags/unknown.png" alt="unknown origin" title="Unknown"> Jose Concha</td>
+            <td>8m 59s</td>
+            <td>2019</td>
+            <td><a href="https://www.youtube.com/watch?v=H1S0KeAF3P0" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr>
+            <td>5d</td>
+            <td><img src="images/flags/germany.png" alt="germany flag" title="Germany"><a href="jugglers.html#guillaume-karpowicz">Guillaume Karpowicz</a></td>
+            <td>122c</td>
+            <td>2018</td>
+            <td><a href="https://youtu.be/K7HtvfG8Uq0" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+          <tr> <!-- table row-->
+            <td>6d</td>
+            <td><img src="images/flags/germany.png" alt="germany flag" title="Germany"><a href="jugglers.html#guillaume-karpowicz">Guillaume Karpowicz</a></td>
+            <td>14c</td>
+            <td>2018</td>
+            <td><a href="https://www.instagram.com/p/BvT-oeTg8dq/" target="_blank"><img src="images/videoLogo.png" alt="Video Clipart Logo"></a></td>
+          </tr>
+        </table> <!-- end of high diabolo records table-->
+      </div> <!-- end of diabolo records div-->
+
+    </section> <!-- end of records.html section-->
+
+    <!-- Footer Container-->
+    <footer class="main-footer">
+      <div class="container main-footer-container"> <!-- Flex container with 4 items-->
+        <h3 class = "newsletter"> The Juggling Newsletter</h3>
+        <h3 class = "follow"> Follow us to keep track of the latest juggling news! </h3>
+        <ul class="nav footer-nav"> <!-- Social Media container. Contains Facebook/Instagram/Twitter Logos and external links-->
+          <li><a href="https://www.flaticon.com/free-icons/facebook" title="facebook icon" target="_blank">
+            <img src="images/facebook logo.png" alt="Image of Facebook's logo."> <!-- Facebook icons created by Freepik - Flatico-->
+          </a></li>
+          <li><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icon" target="_blank">
+            <img src="images/instagram logo.png" alt="Image of Instagram's logo."> <!-- Instagram icons created by Freepik - Flatico-->
+          </a></li>
+          <li><a href="https://www.flaticon.com/free-icons/twitter" title="twitter icon" target="_blank">
+            <img src="images/twitter logo.png" alt="Image of Twitter's logo."> <!-- Twitter icons created by Freepik - Flatico-->
+          </a></li>
+        </ul> <!-- End of Social Media container-->
+        <div> <!-- Container of 4th item, having address tags for contact information.  -->
+          <address> Come join us every Friday at <time>14:00</time>! </address> <!-- <time> tag allows calender integration-->
+          <address>3 Cawthorne Ave, Pasadena, South Australia</address>
+          <address><a href="mailto:infoinfo@jugglingnewsletter.com">Send Email</a></address> <!-- Automatically opens email-->
+        </div> <!-- End of 4th item container-->
+      </div> <!-- End of flex container -->
+    </footer> <!-- End of footer and body-->
+  
+    </body>
+  
+  </html>

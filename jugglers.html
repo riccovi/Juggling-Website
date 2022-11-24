@@ -1,0 +1,222 @@
+<!DOCTYPE html> <!--Tells the browser to use the most up to date version of HTML.-->
+
+<html lang="en" dir="ltr"> <!-- Language = English, Direction = left to right. -->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Juggling Newsletter - Jugglers </title> <!-- The title of the webpage. -->
+    <meta name="description" content="Your #1 resource for all things juggling!">       <!-- Description of web page-->
+    <meta name="author" content="Ricco Visser ">   <!-- Author -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links to the css page. -->
+    <script src="script.js" defer></script> <!-- Links to the javascript page. Because we defer, it works as if we placed the script below our body. Script loads immediately instead of waiting for all the html to load. -->
+    <meta name="refresh" content="600"> <!--Refresh content every 600 seconds-->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+  </head>
+
+  <body>
+
+    <header class="main-header"> <!-- Everything in the header-->
+      <nav class="nav main-nav"> <!-- Navigation Section for header-->
+        <ul> <!-- Unordered List-->
+          <!-- List Items: -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="records.html">World Records</a></li> 
+          <li><a href ="jugglers.html">Jugglers</a></li>
+          <li><a href ="patterns.html">Patterns</a></li> 
+          <li><a href ="props.html">Props</a></li>
+        </ul>
+      </nav>  <!-- End of navigation section for header-->
+      <h1 class = "newsletter newsletter-large"> The Juggling Newsletter</h1> <!-- The main title, in the header-->
+      <!-- Change font size - Increase web accessibility. Located in header for easy visibility.-->
+        <div class="adjust-a"> <!-- Container for "A's" -->
+          <h3 class="small-a">A</h3>
+          <h2 class="medium-a">A</h2>
+          <h1 class="big-a">A</h1>
+        </div>  <!-- End of "A's" container-->
+    </header> <!-- End of header-->
+
+    <section class="jugglers-section"> <!-- Container section of all of jugglers.html. (Excluding header and footer)-->
+      
+      <h1> Jugglers </h1>
+      <p> Some of the best jugglers in the world! Who's your favourite?</p>
+
+      <!-- Jugglers avbar containing 3 div items. -->
+      <nav class="jugglers-nav jugglers-navbar">
+        <div class="toss-jugglers-img" onclick="tossjugglerspage()"><h3>Toss Jugglers</h3></a></div> <!-- If clicked, calls "tossjugglerspage()" function which directs user to 'toss jugglers' section -->
+        <div class="bounce-jugglers-img" onclick="bouncejugglerspage()"><h3>Bounce Jugglers</h3></a></div> <!-- If clicked, calls "bouncejugglerspage()" function which directs user to 'bounce jugglers' section -->
+        <div class="diabolo-jugglers-img" onclick="diabolojugglerspage()"><h3>Diabolo Jugglers</h3></a></div> <!-- If clicked, calls "diabolojugglerspage()" function which directs user to 'diabolo jugglers' section -->
+      </nav>  <!-- End of navbar-->
+
+        <!-- Input to select a specific juggler -->
+        <label for="jugglers-select">Search for a specific juggler:</label> <!-- A label for web accessibility -->
+        <select name="jugglers-select" id="jugglers-select">  <!-- Select element-->
+          <optgroup label="Toss Jugglers">  <!-- Option group. Just a heading and not selectable. -->
+            <option value="anthony-gatto">Anthony Gatto</option> <!-- Selectable option-->
+            <option value="delaney-bayles">Delaney Bayles</option> <!-- Selectable option-->
+            <option value="lauge-benjaminsen">Lauge Benjaminsen</option> <!-- Selectable option-->
+          </optgroup> <!-- End of 'Toss Jugglers' group option-->
+          <optgroup label="Bounce Jugglers"> <!-- Option group. Just a heading and not selectable. -->
+            <option value="alan-sulc">Alan Sulc</option> <!-- Selectable option-->
+            <option value="robert-mosher-iii">Robert Mosher III</option> <!-- Selectable option-->
+            <option value="eden-zak">Eden Zak</option> <!-- Selectable option--> 
+          </optgroup> <!-- End of 'Bounce Jugglers' group option-->
+          <optgroup label="Diabolo Jugglers"> <!-- Option group. Just a heading and not selectable. -->
+            <option value="hiroki-kamei">Hiroki Kamei</option> <!-- Selectable option-->
+            <option value="guillaume-karpowicz">Guillaume Karpowicz</option> <!-- Selectable option-->
+            <option value="pieter-slachmuylders">Pieter Slachmuylders</option> <!-- Selectable option-->
+          </optgroup> <!-- End of 'Diabolo Jugglers' group option-->
+        </select> <!-- End of select element-->
+        <button type="button" class="search-juggler"> Go!</button> <!-- Button which takes you to the juggler user selected-->
+     
+      
+      <!-- Toss Jugglers -->
+      <h2 id="toss-jugglers" class="juggler-type"> Toss Jugglers</h2>
+      <h3> Toss juggling is the most common form of juggling you'll see in circuses, at parks and on the streets. Toss juggling is simply the act of tossing multiple props up into the air, catching them, and throwing them up again. A continual cycle of catching and throwing to keep all props aloft in the air. Easier said than done!</h3>
+
+      <!-- Anthony Gatto -->
+      <h2 class="jugglers-name" id="anthony-gatto">Anthony Gatto</h2>
+      <nav class="jugglers-nav jugglers-items"> <!-- Start of container for juggler-->
+         <figure>
+          <img src="images/jugglers/anthonygatto9rings.jpg" alt="Anthony Gatto Juggling 9 Rings">
+          <figcaption>Anthony Gatto Juggling 9 Rings</figcaption>
+        </figure>
+        <p>Regarded by many as the world's greatest juggler. Anthony Gatto is a name known amongst all. A juggling prodigy born in Manhattan, world-class by the age of nine and began performing in Las Vegas at 10 years old. The only juggler to have ever won the Golden Clown Award with numerous world records still unbroken 15 years later. </p>
+        <iframe src="https://www.youtube.com/embed/wP8tbLBls_M" title="Anthony Gatto Juggling Video" loading="lazy"></iframe>
+        <span class="video-link">Check out their juggling! <a href="https://www.youtube.com/embed/wP8tbLBls_M" target="_blank">Video</a></span> <!-- If screen size is too small, a link with display instead of embedded video.-->
+      </nav> <!-- End of container for juggler-->
+      <!-- Delaney Bayles -->
+      <h2 class="jugglers-name" id="delaney-bayles">Delaney Bayles</h2>
+      <nav class="jugglers-nav jugglers-items"> <!-- Start of container for juggler-->
+        <figure>
+          <img src="images/jugglers/delaneybayles7clubs.PNG" alt="Delaney Bayles Juggling 7 Clubs With A Club Balance">
+          <figcaption>Delaney Bayles Juggling 7 Clubs With A Club Balance</figcaption>
+        </figure>
+        <p>Dubbed as the "most technically gifted female toss juggler of all time", Delaney keeps wowing her fans with never-before-seen tricks from backcrosses to overheads. Voted the most popular juggler by Luke Burrage in 2020 and 2021. </p>
+        <iframe src="https://www.youtube.com/embed/OY8WUEdBcEk" title="Delaney Bayles Juggling Video" loading="lazy"></iframe>
+        <span class="video-link">Check out their juggling! <a href="https://www.youtube.com/embed/OY8WUEdBcEk" target="_blank">Video</a></span> <!-- If screen size is too small, a link with display instead of embedded video.-->
+      </nav> <!-- End of container for juggler-->
+      <!-- Lauge Benjaminsen -->
+      <h2 class="jugglers-name" id="lauge-benjaminsen">Lauge Benjaminsen</h2>
+      <nav class="jugglers-nav jugglers-items"> <!-- Start of container for juggler-->
+        <figure>
+          <img src="images/jugglers/LaugeBenjaminsen.webp" alt="Lauge Benjaminsen">
+          <figcaption>Lauge Benjaminsen</figcaption>
+        </figure>
+        <p>Known for his incredible spins. Lauge learnt to juggle at the age of 13 and 5 years later was voted the most popular juggler for 2011. He holds an impressive amount of world records, and is known for his gentle and loving nature in the juggling community.</p>
+        <iframe src="https://www.youtube.com/embed/xFi7thpbKAk" title="Lauge Benjaminsen Juggling Video" loading="lazy"></iframe>
+        <span class="video-link">Check out their juggling! <a href="https://www.youtube.com/embed/xFi7thpbKAk" target="_blank">Video</a></span> <!-- If screen size is too small, a link with display instead of embedded video.-->
+      </nav> <!-- End of container for juggler-->
+      
+      <!-- Bounce Jugglers -->
+      <h2 id="bounce-jugglers" class="juggler-type bounce-header"> Bounce Jugglers</h2>
+      <h3>Bounce juggling is, you guessed it, juggling with bounces! Unlike toss jugglers who throw towards the air, bounce jugglers throw towards the ground. They use a specific type of material to make the ball and the surface extra bouncy. Bounce Juggling is arguably more difficult than toss juggling, as one only has so much space between your hands and the ground.</h3>
+
+      <!-- Alan Sulc -->
+      <h2 class="jugglers-name" id="alan-sulc">Alan Sulc</h2>
+      <nav class="jugglers-nav jugglers-items"> <!-- Start of container for juggler-->
+        <figure>
+          <img src="images/jugglers/AlanSulcBounce7.PNG" alt="Alan Sulc Bouncing 7 Balls">
+          <figcaption>Alan Sulc Bouncing 7 Balls</figcaption>
+        </figure>
+        <p>Part of the Berouesek circus family, Alan started juggling at the age of 7, and started performing at the age of 12. One of the best bounce numbers jugglers, Alan holds world records in bounce juggling 8 to <a href="https://youtu.be/17E9qfQu9LQ?t=60" target="_blank">12 balls!</a></p>
+        <iframe src="https://www.youtube.com/embed/CrIn6e2k2fQ" title="Alan Sulc Juggling Video" loading="lazy"></iframe>
+        <span class="video-link">Check out their juggling! <a href="https://www.youtube.com/embed/CrIn6e2k2fQ" target="_blank">Video</a></span> <!-- If screen size is too small, a link with display instead of embedded video.-->
+      </nav> <!-- End of container for juggler-->
+
+      <!-- Robert Mosher III -->
+      <h2 class="jugglers-name" id="robert-mosher-iii">Robert Mosher III</h2>
+      <nav class="jugglers-nav jugglers-items"> <!-- Start of container for juggler-->
+        <figure>
+          <img src="images/jugglers/RobertMosherIII.webp" alt="Robert Mosher The Third Bouncing 8 Balls">
+          <figcaption>Robert Mosher III Bouncing 8 Balls</figcaption>
+        </figure>
+        <p>Robert first came to fame when he set a new world record bounce juggling 10 balls for 29 catches in the official IJA competition. The next year year he would break his own record with <a href="https://youtu.be/VZCKZbC26Rg" target="_blank">39 catches</a></p>
+        <iframe src="https://www.youtube.com/embed/yAORMO6j8Ds" title="Robert Mosher The Third Juggling Video" loading="lazy"></iframe>
+        <span class="video-link">Check out their juggling! <a href="https://www.youtube.com/embed/yAORMO6j8Ds" target="_blank">Video</a></span> <!-- If screen size is too small, a link with display instead of embedded video.-->
+      </nav> <!-- End of container for juggler-->
+
+      <!-- Eden Zak -->
+      <h2 class="jugglers-name" id="eden-zak">Eden Zak</h2>
+      <nav class="jugglers-nav jugglers-items"> <!-- Start of container for juggler-->
+        <figure>
+          <img src="images/jugglers/EdenZak.PNG" alt="Eden Zak street performing">
+          <figcaption>Eden Zak street performing</figcaption>
+        </figure>
+        <p>Eden Zak is a bounce juggler from Israel. At the age of only 8, he became the first person to qualify a 10 ball bounce. (20 catches) In 2014, he set the current <a href="https://youtu.be/1UB8kXLiiKM" target="_blank">11 ball bounce world record of 12 catches.</a></p>
+        <iframe src="https://www.youtube.com/embed/5iVt3MaSrBo" title="Eden Zak Juggling Video" loading="lazy"></iframe>
+        <span class="video-link">Check out their juggling! <a href="https://www.youtube.com/embed/5iVt3MaSrBo" target="_blank">Video</a></span> <!-- If screen size is too small, a link with display instead of embedded video.-->
+      </nav> <!-- End of container for juggler-->
+      
+      <!-- Diabolo Jugglers -->
+      <h2 id="diabolo-jugglers" class="juggler-type diabolo-header"> Diabolo Jugglers</h2>
+      <h3> Highly popular in Japan, Diabolo also commonly called Chinese yo-yo, is a unique type of juggling. Consisting of an axle and two hourglass cups, as well as a seperate string with two hand sticks, the conservation of angular momentum is used to toss, juggle and spin the diabolo. Advanced tricks include whip catches, finger grinds, star cradles, and introducing 2 or more diabolos on one string. </h3>
+
+      <!-- Hiroki Kamei -->
+      <h2 class="jugglers-name" id="hiroki-kamei">Hiroki Kamei</h2>
+      <nav class="jugglers-nav jugglers-items"> <!-- Start of container for juggler-->
+        <figure>
+          <img src="images/jugglers/HirokiKamei.PNG" alt="Hiroki Kamei Performing">
+          <figcaption>Hiroki Kamei Performing</figcaption>
+        </figure>
+        <p>In the world of diabolo, Hiroki Kamei may be the best the world has ever seen. Inventing and performing tricks once thought impossible, Hiroki made a name for himself when he won the 2016 IJA competition becoming the first diabolist to do so. For anyone new to Diabolo, Hiroki's performance is a must-watch. </p>
+        <iframe src="https://www.youtube.com/embed/h43vmAyzTgs" title="Hiroki Kamei Juggling Video" loading="lazy"></iframe>
+        <span class="video-link">Check out their juggling! <a href="https://www.youtube.com/embed/h43vmAyzTgs" target="_blank">Video</a></span> <!-- If screen size is too small, a link with display instead of embedded video.-->
+      </nav> <!-- End of container for juggler-->
+
+      <!-- Guillaume Karpowicz -->
+      <h2 class="jugglers-name" id="guillaume-karpowicz">Guillaume Karpowicz</h2>
+      <nav class="jugglers-nav jugglers-items"> <!-- Start of container for juggler-->
+        <figure>
+          <img src="images/jugglers/GuillaumeKarpowicz.PNG" alt="Guillaume Karpowicz">
+          <figcaption>Guillaume Karpowicz</figcaption>
+        </figure>
+        <p>Known for his creativity and unique style, Guillaume Karpowicz from Germany is the only person to have qualified both 5 diabolos high and low. He was also the first person to <a href="https://youtu.be/4k1AbhKl2tA" target="_blank">6 diabolos low</a> in 2016. Guillaume holds world records in both 5 and 6 diabolo high, as well as 6-10 diabolo passing.</p>
+        <iframe src="https://www.youtube.com/embed/0KFPkwKO4G0" title="Guillaume Karpowicz Juggling Video" loading="lazy"></iframe>
+        <span class="video-link">Check out their juggling! <a href="https://www.youtube.com/embed/0KFPkwKO4G0" target="_blank">Video</a></span> <!-- If screen size is too small, a link with display instead of embedded video.-->
+      </nav> <!-- End of container for juggler-->
+
+      <!-- Pieter Slachmuylders -->
+      <h2 class="jugglers-name" id="pieter-slachmuylders">Pieter Slachmuylders</h2>
+      <nav class="jugglers-nav jugglers-items"> <!-- Start of container for juggler-->
+        <figure>
+          <img src="images/jugglers/PieterSlachmuylders.PNG" alt="Pieter Slachmuylders juggling 3 diabolos">
+          <figcaption>Pieter Slachmuylders juggling 3 diabolos</figcaption>
+        </figure>
+        <p> Another amazing numbers diabolist, Pieter started practicing diabolo at the age of 13 in his home country of Belgium. He has gone on to achieve the <a href="https://youtu.be/EBiYmEKaT5Y" target="_blank">3 diabolos high world record</a> of 5 minutes and 53 seconds, and holds the 10 diabolo passing world record of 13 catches with <a href="#guillaume-karpowicz"> Guillaume Karpowicz.</a>  </p>
+          <iframe src="https://www.youtube.com/embed/PABymVj6bb0" title="Pieter Slachmuylders Juggling Video" loading="lazy"></iframe>
+          <span class="video-link">Check out their juggling! <a href="https://www.youtube.com/embed/PABymVj6bb0" target="_blank">Video</a></span> <!-- If screen size is too small, a link with display instead of embedded video.-->
+      </nav> <!-- End of container for juggler-->
+
+    </section> <!-- End of section for jugglers.html -->
+
+    <!-- Footer Container-->
+    <footer class="main-footer">
+      <div class="container main-footer-container"> <!-- Flex container with 4 items-->
+        <h3 class = "newsletter"> The Juggling Newsletter</h3>
+        <h3 class = "follow"> Follow us to keep track of the latest juggling news! </h3>
+        <ul class="nav footer-nav"> <!-- Social Media container. Contains Facebook/Instagram/Twitter Logos and external links-->
+          <li><a href="https://www.flaticon.com/free-icons/facebook" title="facebook icon" target="_blank">
+            <img src="images/facebook logo.png" alt="Image of Facebook's logo."> <!-- Facebook icons created by Freepik - Flatico-->
+          </a></li>
+          <li><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icon" target="_blank">
+            <img src="images/instagram logo.png" alt="Image of Instagram's logo."> <!-- Instagram icons created by Freepik - Flatico-->
+          </a></li>
+          <li><a href="https://www.flaticon.com/free-icons/twitter" title="twitter icon" target="_blank">
+            <img src="images/twitter logo.png" alt="Image of Twitter's logo."> <!-- Twitter icons created by Freepik - Flatico-->
+          </a></li>
+        </ul> <!-- End of Social Media container-->
+        <div> <!-- Container of 4th item, having address tags for contact information.  -->
+          <address> Come join us every Friday at <time>14:00</time>! </address> <!-- <time> tag allows calender integration-->
+          <address>3 Cawthorne Ave, Pasadena, South Australia</address>
+          <address><a href="mailto:infoinfo@jugglingnewsletter.com">Send Email</a></address> <!-- Automatically opens email-->
+        </div> <!-- End of 4th item container-->
+      </div> <!-- End of flex container -->
+    </footer> <!-- End of footer and body-->
+  
+    </body>
+  
+  </html>

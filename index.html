@@ -1,0 +1,154 @@
+<!DOCTYPE html> <!--Tells the browser to use the most up to date version of HTML.-->
+
+<html lang="en" dir="ltr"> <!-- Language = English, Direction = left to right. -->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Juggling Newsletter - Home </title> <!-- The title of the webpage. -->
+    <meta name="description" content="Your #1 resource for all things juggling!">       <!-- Description of web page-->
+    <meta name="author" content="Ricco Visser ">   <!-- Author -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links to the css page. -->
+    <script src="script.js" defer></script> <!-- Links to the javascript page. Because we defer, it works as if we placed the script below our body. Script loads immediately instead of waiting for all the html to load. -->
+    <meta name="refresh" content="600"> <!--Refresh content every 600 seconds-->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+  </head>
+
+  <body> 
+    <header class="main-header"> <!-- Everything in the header-->
+      <nav class="nav main-nav"> <!-- Navigation Section for header-->
+        <ul> <!-- Unordered List-->
+          <!-- List Items: -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="records.html">World Records</a></li> 
+          <li><a href ="jugglers.html">Jugglers</a></li>
+          <li><a href ="patterns.html">Patterns</a></li> 
+          <li><a href ="props.html">Props</a></li>
+        </ul>
+      </nav>  <!-- End of navigation section for header-->
+      <h1 class = "newsletter newsletter-large"> The Juggling Newsletter</h1> <!-- The main title, in the header-->
+      <!-- Change font size - Increase web accessibility. Located in header for easy visibility.-->
+        <div class="adjust-a"> <!-- Container for "A's" -->
+          <h3 class="small-a">A</h3>
+          <h2 class="medium-a">A</h2>
+          <h1 class="big-a">A</h1>
+        </div>  <!-- End of "A's" container-->
+    </header> <!-- End of header-->
+
+    <section class="home-section"> <!-- Container section of all of index.html. (Excluding header and footer)-->
+      
+      <audio controls> <!-- Audio bar. 'Controls' allows pausing and muting. -->
+        <source src="audio/juggling-newsletter-audio.m4a"> I'm sorry. Your browser does not support the audio element! This is just a quick message greeting the reader. <!-- Descriptive text for browsers which do not support audio-->
+      </audio>
+      
+      <!-- Flexbox Grid -->
+      <div class="home-grid-container">   <!-- Grid container. Containing 6 items. -->
+        <div class="home-grid-item home-grid-item-1"> <!-- Grid item 1 - Latest news-->
+          <h2> Latest News </h2>
+          <p> Don't miss anything juggling-related with our juggling newsletter. The latest juggling news at your fingertips, all for free!</p>
+          <article>
+            <blockquote cite="https://juggle.fandom.com/wiki/Juggle_Wiki"> <!-- giving source where information is retrieved -->
+              <ul>
+                <li><b>July 14 - </b><i>Ho Lam Pun</i><sup><a href="https://www.instagram.com/ho_lam_/" target="_blank">(Instagram)</a></sup> wins the 2022 IJA Individuals Competition! <i>Matthew Walmsley</i> <sup><a href="https://www.instagram.com/mattwalmsleyy/" target="_blank">(Instagram)</a></sup> wins the Juniors competition. </li>
+                <li><b>July 13 - </b><i>Oscar Carillo</i> broke the 5 ball <a href="records.html#bounce-WR">force bounce world record</a> with a run of 1 hour, 13 minutes, and 37 seconds! <sup><a href="https://www.youtube.com/watch?v=fFNAPWO1jZI" target="_blank">(video)</a></sup></li>
+                <li><b>July 12 - </b>The 5 <a href="records.html#ring-WR"> ring world record </a>is broken by <i>Maximilian Kuschmierz</i> with a time of 23 minutes and 29 seconds!<sup><a href="https://www.youtube.com/watch?v=_Y5z2eIN73U" target="_blank">(video)</a></sup></li>
+                <li><b>July 3 - </b><i>Oscar Carillo</i> breaks the 6 ball <a href="records.html#bounce-WR">force bounce world record</a> with a run of 12 minutes and 10 seconds!<sup><a href="https://www.youtube.com/watch?v=uBbKXVIXhzo" target="_blank">(video)</a></sup></li>
+                <li><b>June 19 - </b><i>Jamie Tucker-Foltz</i>is the first person to get 9 catches of 9 balls on a unicycle! <sup><a href="https://www.youtube.com/watch?v=_T2_x6mJ6Zs" target="_blank">(video)</a></sup></li>
+                <li><b>June 9 - </b><i>Maximilian Kuschmierz</i> is the 12th person to juggle 8 balls for over 100 catches!<sup><a href="https://www.facebook.com/max.kuschmierz/videos/587538946046941" target="_blank">(video)</a></sup></li>
+                <li><b>June 9 - </b><i>Jamie Tucker-Foltz </i> is the first person to qualify 7 clubs on a unicycle!<sup><a href="https://www.youtube.com/watch?v=mw7nAtxOTMg" target="_blank"></a></sup></li>
+                <li><b>June 2 - </b>The 19 ball passing world record is broken by <i>Tom Whitfield</i> and <i>Dan Wood</i> with 28 catches! <sup><a href="https://www.youtube.com/watch?v=A4MRUHImlCg" target="_blank">(video)</a></sup></li>
+                <li><b>May 29 - </b><i>Kenta Hara</i> is the sixth person to flash a  high 6 diabolo pattern. <sup><a href="https://www.instagram.com/p/CeKyIWijrEj/" target="_blank"></a></sup></li>
+                <li><b>May 9 - </b><i>Dominik Harant</i> and <i>Manuel Mitasch</i> break the 100-catch barrier of 13 club passing, with 102 catches! <sup><a href="https://www.youtube.com/watch?v=A4MRUHImlCg" target="_blank">(video)</a></sup></li>
+              </ul>
+            </blockquote>
+          </article>
+        </div> <!-- End of Grid Item 1 -->
+        <!-- Grid Items 1-5. Div's sending user to other pages.-->
+        <div class="home-grid-item home-grid-item-page home-grid-item-2" onclick="recordspage()">   <!-- When clicked, calls 'recordspage()' function which directs user to the records.html page.-->
+          <h2>World Records</h2>
+        </div>
+        <div class="home-grid-item home-grid-item-page home-grid-item-3" onclick="jugglerspage()"> <!-- When clicked, calls 'jugglerspage()' function which directs user to the jugglers.html page.-->
+          <h2>Jugglers</h2>
+        </div>
+        <div class="home-grid-item home-grid-item-page home-grid-item-4" onclick="patternspage()"> <!-- When clicked, calls 'patternspage()' function which directs user to the patterns.html page.-->
+          <h2>Patterns</h2>
+        </div>
+        <div class="home-grid-item home-grid-item-page home-grid-item-5" onclick="propspage()"> <!-- When clicked, calls 'propspage()' function which directs user to the props.html page.-->
+          <h2>Props</h2>
+        </div> 
+        
+        <!-- Adapted code: w3schools, 'How TO - Slideshow', 2022. [Online]. Available: https://www.w3schools.com/howto/howto_js_slideshow.asp. [Accessed: 4- Sep- 2022]-->
+        <div class="home-grid-item home-grid-item-6">   <!-- Grid Item 6 - Image Carousel -->
+          <div class="carousel-container">  <!-- Div containing all of carousel slide 1 - fills grid item -->
+            <div class="carousel-slide fade"> <!-- Slide of carousel. Fills completely-->
+              <div class="slide-number">1/5</div> <!-- Top left slide number -->
+              <img src="images/slides/slide1.jpg" alt="EJC 2022 - setting up tent" class="carousel-img"> <!-- Slide image-->
+              <div class="slide-caption">EJC 2022 - Setting up tent</div> <!-- Bottom centered slide caption-->
+            </div> <!-- End of div with slide 1  -->
+            <div class="carousel-slide fade"> <!-- Carousel div with slide 2 -->
+              <div class="slide-number">2/5</div>
+              <img src="images/slides/slide2.jpg" alt="EJC 2022 - last minute meeting" class="carousel-img">
+              <div class="slide-caption">EJC 2022 - Last minute meeting</div>
+            </div> <!-- End of div with slide 2  -->
+            <div class="carousel-slide fade"> <!-- Carousel div with slide 3 -->
+              <div class="slide-number">3/5</div>
+              <img src="images/slides/slide3.jpg" alt="EJC 2022 - clubs balance galore!" class="carousel-img">
+              <div class="slide-caption">EJC 2022 - Clubs balance galore!</div>
+            </div> <!-- End of div with slide 3  -->
+            <div class="carousel-slide fade">
+              <div class="slide-number">4/5</div> <!-- Carousel div with slide 4 -->
+              <img src="images/slides/slide4.jpg" alt="EJC 2022 - handstands all around!" class="carousel-img">
+              <div class="slide-caption">EJC 2022 - Handstands all around!</div>
+            </div> <!-- End of div with slide 4  -->
+            <div class="carousel-slide fade">
+              <div class="slide-number">5/5</div> <!-- Carousel div with slide 5 -->
+              <img src="images/slides/slide5.jpg" alt="EJC 2022 - juggling on the big stage" class="carousel-img">
+              <div class="slide-caption">EJC 2022 - Juggling on the big stage</div>
+            </div> <!-- End of div with slide 5  -->
+
+              <!-- Previous/Next Buttons located on left/right sides of image -->
+              <a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a> <!-- Left Arrow Symbol-->
+              <a class="next-slide" onclick="plusSlides(1)">&#10095;</a> <!-- Right Arrow Symbol-->
+          </div> <!-- End of Grid Item 6-->
+          
+          <!-- 5 Clickable Dots - Centered below Grid Item 6, but not part of the grid. -->
+          <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+        </div>
+    </section>  <!-- End of index.html section-->
+
+    <!-- Footer Container-->
+    <footer class="main-footer">
+      <div class="container main-footer-container"> <!-- Flex container with 4 items-->
+        <h3 class = "newsletter"> The Juggling Newsletter</h3>
+        <h3 class = "follow"> Follow us to keep track of the latest juggling news! </h3>
+        <ul class="nav footer-nav"> <!-- Social Media container. Contains Facebook/Instagram/Twitter Logos and external links-->
+          <li><a href="https://www.flaticon.com/free-icons/facebook" title="facebook icon" target="_blank">
+            <img src="images/facebook logo.png" alt="Image of Facebook's logo."> <!-- Facebook icons created by Freepik - Flatico-->
+          </a></li>
+          <li><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icon" target="_blank">
+            <img src="images/instagram logo.png" alt="Image of Instagram's logo."> <!-- Instagram icons created by Freepik - Flatico-->
+          </a></li>
+          <li><a href="https://www.flaticon.com/free-icons/twitter" title="twitter icon" target="_blank">
+            <img src="images/twitter logo.png" alt="Image of Twitter's logo."> <!-- Twitter icons created by Freepik - Flatico-->
+          </a></li>
+        </ul> <!-- End of Social Media container-->
+        <div> <!-- Container of 4th item, having address tags for contact information.  -->
+          <address> Come join us every Friday at <time>14:00</time>! </address> <!-- <time> tag allows calender integration-->
+          <address>3 Cawthorne Ave, Pasadena, South Australia</address>
+          <address><a href="mailto:infoinfo@jugglingnewsletter.com">Send Email</a></address> <!-- Automatically opens email-->
+        </div> <!-- End of 4th item container-->
+      </div> <!-- End of flex container -->
+    </footer> <!-- End of footer and body-->
+
+  </body>
+
+</html>

@@ -1,0 +1,1167 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400'); /* Import 'Raleway' font from Google Fonts */
+
+@font-face {        /* Import font */
+    font-family: "Carnevalee Freakshow";
+    src: url("Fonts/Carnevalee\ Freakshow.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CSS for all pages */
+
+* {         /* Everything selector */
+    box-sizing: border-box;  /* Size of elements are determined by the combined padding, margin and content size. */
+    font-family: Raleway;
+}
+
+html, body{     
+    margin: 0;          /* Remove any margin and padding from html and body */
+    padding: 0;
+}
+
+nav ul {
+    margin: 0;
+}
+
+section{
+    background-color: rgb(187, 142, 84);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+h1{
+    color: rgb(9, 217, 224);
+    margin: 0;
+    padding: .7em;
+    font-size: 2.5em;
+}
+
+p{
+    color: pink;
+    font-size: 1.5em;
+}
+
+.nav li {
+    display: inline;  /* Makes elements inline */
+}
+
+.nav a {
+    display: inline-block ;     /* Set display to inline-block */
+    padding: .5em;
+    color: white;
+    text-decoration: none; /* Removes default decoration of element*/
+}
+
+.nav a:hover{  /* When hovered over the links */
+    background-color: rgba(100,255,255, .3);
+}
+
+.main-nav{
+    text-align: center;      /* Puts text centre of screen */
+    font-size: 1.1em;
+    font-weight: lighter;   /* Blends a bit more with the background */
+    border-bottom: 1px solid rgba(255,255,255, .3);
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6); /* Add black opacity to the image */
+    background-image: url(images/juggling\ background.jpg);  /* Places a background image under the 'main-header' class */ 
+    background-blend-mode: multiply;    /* Combines background colour and background image */ 
+    background-size: cover; /* Expands as much as it can horizontally or vertically according to the size of the browser. (Responsive) */
+}
+
+.newsletter {
+    text-align: center;  /* Place it centre of screen */
+    margin: 0;  /* Remove margin */    
+    font-size: 4em;
+    font-family: "Carnevalee Freakshow";
+    font-weight: normal;
+    color: white;
+}
+
+.newsletter-large {
+    font-size: 5em;
+}
+
+.btn {
+    text-align: center; /* centers horizontally */
+    vertical-align: middle; /* centers vertically */
+    padding: .6em;
+    cursor: pointer;    /* Makes cursor change to 'pointer' when hovered over */
+}
+
+.adjust-a{
+    display: flex;      /* Flexbox */
+    justify-content: center ;   /* Aligns items to be center of container */
+    align-items: center; /* Centers the alignment for all items in the container */
+} 
+
+.adjust-a h3, .adjust-a h2, .adjust-a h1{
+    padding: 0;
+    margin: 0 1%;
+    color: #a8e3f7;
+    cursor: pointer;
+}
+
+.adjust-a h3{
+    font-size: 1em;
+}
+
+.adjust-a h3:hover, .adjust-a h2:hover, .adjust-a h1:hover{
+    color:#7ac7e0;
+}
+
+.adjust-a h2{
+    font-size: 2em;
+}
+
+.adjust-a h1{
+    font-size: 3em;
+}
+
+/* Bounce Juggling Animation */
+
+@-webkit-keyframes bounce-animation{                 /* -webkit- for browsers that do not support animation */
+    from { top: 0px;}
+    to {top: 50px;}
+}
+
+@keyframes bounce-animation{
+    from { top: 0px;}
+    to {top: 50px;}
+}
+
+.bounce-header{
+    position: relative;
+    animation-name: bounce-animation;
+    animation-duration: 1s;         /* Takes a total of 1 second */
+    animation-iteration-count: infinite;   /* Continue animation forever */ 
+    animation-direction: alternate;     /* Play animation forwards than backwards (Allows smooth animation, no 'jumps') */
+    animation-timing-function: linear;  /* Keep speed the same the whole way through */
+    -webkit-animation-name: bounce-animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+}
+
+/* CSS for Footer */
+
+.main-footer{
+    background-color: rgb(2, 190, 128); 
+    color: white;
+    padding: .2em;
+}
+
+.follow{
+    color:rgb(241, 241, 95);
+    margin: 2em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+    padding: 0;
+    display: flex;
+    flex-direction: column;     /* Change default flex-direction of rows, to columns (positioned vertically) */
+    text-align: center;
+}
+
+.footer-nav li{
+    padding: 0 .5em;
+}
+
+.footer-nav img{
+    width: 1.7em;
+    height: 1.7em;
+}
+
+.main-footer address{
+    color:#333;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+
+}
+
+.main-footer a{
+    color:#333;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* index.html CSS */
+
+.home-section audio{
+    margin: 1em;
+}
+
+.home-grid-container{
+    display: grid;  /* Grid Display */
+    grid-template-columns: repeat(4, 20%);  /* Width */  /* a repeat of 4 items */
+    grid-auto-rows: minmax(5em, 10em);   /* Height */
+    gap: 1em;      /* equal gap between rows and columns */
+    justify-content: space-around;  
+    padding: 1%;
+}
+
+.home-grid-item{
+    border: 3px solid rgb(104, 28, 28);
+    background-color: rgb(133, 120, 98);
+}
+
+.home-grid-item-1{
+    grid-column: span 3; /* Spans 3 columns */
+    grid-row: span 4;   /* Spans 4 rows */
+    overflow-y: scroll;      /* Add vertical scrollbar */
+}
+
+.home-grid-item-6{
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.home-section ul{
+    list-style-type: square;   /* Makes bullet points square */
+    font-size: 1.2em;
+    padding: 5%;
+}
+
+.home-section li{
+    padding: 2%;
+}
+
+.home-section ul b{
+    color: tomato;
+}
+
+.home-section ul i{
+    color:rgb(194, 194, 9);
+}
+
+.home-section sup{      /* Superscript */
+    font-size: .7em;
+}
+
+.home-section li > a{
+    color:#56ccf2;
+}
+
+.home-section li > a:hover{
+    color: green;
+}
+
+.home-grid-item-1::-webkit-scrollbar{
+    width: 1.3em;
+}
+
+.home-grid-item-1::-webkit-scrollbar-track{
+    background:rgb(205, 241, 252);
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+.home-grid-item-1::-webkit-scrollbar-thumb{
+    background: rgb(2,220,128);
+    border-radius: 10px;
+}
+
+.home-grid-item-1::-webkit-scrollbar-thumb:hover{
+    background:rgb(2, 190, 128);
+}
+
+.home-grid-item-page{
+    background-size: cover;
+    color: white;
+    background-color: rgba(0,0,0 , .7);
+    background-blend-mode: multiply;
+    cursor: pointer;
+}
+
+.home-grid-item-page:hover{
+    background-color:antiquewhite;
+}
+
+.home-grid-item-2:hover, .home-grid-item-4:hover{
+    color: black;
+}
+
+.home-grid-item-2{
+    background-image: url("images/wrbackground.PNG");
+}
+
+.home-grid-item-3{
+    background-image: url("images/jugglersbackground.jpg");
+}
+
+.home-grid-item-4{
+    background-image: url("images/patternsbackground.png");
+}
+
+.home-grid-item-5{
+    background-image: url("images/propsbackground2.jpg");
+}
+
+.home-section blockquote{
+    margin: 0;
+}
+
+/* Carousel Styling */
+
+.carousel-container{
+    position: relative;
+    height: 100%;
+}
+
+.carousel-slide{
+    display: none;    /*  Hidden by Default */
+    height: 100%;
+}
+
+.carousel-img{
+    width: 100%;
+    height: 100%;
+}
+
+.prev-slide, .next-slide{       /* Previous/Next Buttons */
+    position: absolute;
+    top: 30%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 3em;
+    transition: 0.5s ease;  /* built in transition-animation */
+    user-select: none;  /* No default selection */
+    cursor: pointer;
+    padding: .5em;
+    
+}
+
+.prev-slide{
+    left: 0;
+}
+
+.next-slide{
+    right: 0;
+}
+
+.prev-slide:hover, .next-slide:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.slide-number{
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    padding: .5em;
+}
+
+.slide-caption{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    position: absolute;
+    bottom: .5em;
+    width: 100%;
+}
+
+.dots{
+    margin: 1%;
+}
+.dot{
+    cursor: pointer;
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 50%;
+    background-color: #333;
+    display: inline-block;
+    transition: background-color 0.9s ease;
+    margin: 0 .1em;
+}
+
+.active, .dot:hover{
+    background-color: #58b65c;
+}
+
+/* Fading Animation */
+
+.fade{
+    animation-name: fade;
+    animation-duration: 3s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+}
+
+@keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+@-webkit-keyframes fade{        /* Add @-webkit- for browsers that do not support animation */
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+
+/* records.html CSS */
+
+.wr-table{
+    border-collapse: collapse;      /* Hide table lines */
+    width: 100%;
+    background-color: rgb(216, 216, 123);
+    font-size: 1.1em;
+    color: black;
+}
+
+
+.records-section td, th{
+    border: 1px solid rgb(31, 43, 15);
+    text-align: left;
+    padding: .6em;
+}
+
+
+.wr-table img{
+    width: 1.4em;
+}
+
+.wr-table td > img{   /* Selector: Every img tag with a td tag as the direct parent */  
+    cursor: help;
+}
+
+.wr-table tr td:last-child{     /* Selector: Last child (column) of table */
+    text-align: center;
+}
+
+.wr-table .bold-cell{
+    font-weight: bold;
+}
+
+.wr-table col{
+    background-image: linear-gradient(green,yellow,red);
+}
+
+.wr-table{
+    background-color: lightblue;
+}
+
+.wr-table tr td:nth-child(even){    /* Selector: Every 2nd column */
+    background-color: #a8e3f7;
+}
+
+.wr-table tr td:first-child{
+    font-weight: bold;
+}
+
+.wr-table .head{
+    background-color: rgb(5, 117, 155);
+}
+
+.records-section h2{
+    padding-top: 1em;
+    margin: 2em;
+}
+
+.records-section p{
+    padding-bottom: 3em;
+}
+
+.bounce-WR .bounce-header{
+  padding-top: 0;
+  padding-bottom: 2em;
+}
+
+.wr-table a:hover{
+    color: rgb(247, 184, 102);
+}
+
+.records-section .btn{ 
+    background-color: #56ccf2;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1em;
+    transition-duration: 0.8s;
+}
+
+.records-section .btn:hover{
+    background-color: #a8e3f7;
+}
+
+/* Hide/Reveal Tables */
+
+.hide{
+    display: none;   /* Invisible */
+}
+
+.reveal{
+    display: auto;  /* Visible */
+}
+
+
+/* jugglers.html CSS */
+
+
+.jugglers-navbar div{
+    background-color: rgba(0,0,0 , .5);
+    background-position: center;    /* Center background image */
+    background-size: cover;         /*Let background image cover the full size*/
+    border: #333 solid ;
+    background-blend-mode: multiply;
+    height: 80%;
+    margin: auto;
+}
+
+.jugglers-nav{
+    display: flex;
+    padding: .5em 2em 5.5em;
+    height: 25em;
+}
+
+.jugglers-section div h3{
+    color: rgb(255, 255, 255);  
+    margin: 20%;
+    padding-top: 40%; 
+
+}
+
+.jugglers-section div:hover{
+    cursor: pointer;
+    border-color: #56ccf2;
+    text-decoration: 3px solid underline rgb(128, 10, 10);
+}
+
+.toss-jugglers-img{
+    background-image: url(images/toss\ juggling.jpg);
+}
+
+.bounce-jugglers-img{
+    background-image: url(images/bounce\ juggling.jpg);
+}
+
+.diabolo-jugglers-img{
+    background-image: url(images/diabolo\ juggling.jpg);
+}
+
+.jugglers-section label{
+    font-size: 1.3em;
+    color: #700574;
+    text-decoration: none;
+    margin-right: 1%;
+}
+
+.search-juggler{
+    font-size: 1.1em;
+    margin-left: 1%;
+    background-color: #56ccf2 ;
+    border: 1px black solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-juggler:hover{
+    background-color: #a8e3f7
+}
+
+.juggler-type{
+    color:black;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.jugglers-section h3{
+    color: rgb(107, 52, 52);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.jugglers-name{ 
+    color: rgb(70, 39, 3);
+    padding-top: 2em;
+}
+
+.jugglers-nav img{
+    height: 100%;
+    width: 10em;
+    border-radius: 10px;
+    box-shadow: black 10px 10px 10px;
+}
+
+.jugglers-nav figcaption{
+    font-size: 1.1em;
+    color: black;
+    margin: .8em;
+}
+
+.jugglers-nav iframe{
+    border-radius: 20px;
+}
+
+.jugglers-nav p{
+    margin-right: .5em;
+    text-align: justify;
+}
+
+.jugglers-nav p a{
+    color: rgba(248, 156, 171);
+    text-decoration: none;
+    border-bottom:black 1px solid;
+    font-weight: bold;
+}
+
+.jugglers-nav p a:hover{
+    color: #eb5757;
+}
+
+.jugglers-nav p a:active{
+    color: brown;
+}
+
+.video-link{
+    font-size: 1.4em;
+    display: none;          /* Hidden by default. Made visible my media query. */
+}
+
+
+/* patterns.html CSS*/
+
+.patterns-section p{
+    padding-bottom: 5%;
+    margin: 0 5%;
+}
+.patterns-section h3{
+    color: white;
+    padding: 5%;
+}
+
+.patterns-section h2{
+    padding-top: 3em;
+}
+
+.patterns-section .did-you-know{
+    display: inline;
+    font-size: 1.5em;
+    border: 2px black solid;
+    background-color: #a8e3f7;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 20px;   /* Add some shadowing to pop out*/
+}
+
+/* "Did you know?" Modal */
+.patterns-section .dyk-modal{
+    display: none;  /* Hides the display by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Place at top of page */
+    left: 0;
+    top: 0;     /* top left corner of page */
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Allows scrolling */
+    background-color: rgba(0, 0, 0, .6) ;   /* Add transparency to still see rest of webpage */
+}
+
+.patterns-section .modal-content{
+    position: relative;
+    background-color: #58b65c;
+    margin: 10% auto;
+    padding: 1em;
+    border: 2px solid rgb(255, 255, 255);
+    width: 80%;
+    /* Animation */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.3s;
+    animation-name: animatetop;
+    animation-duration: 0.3s;
+}
+
+.patterns-section .modal-header{
+    color: white;
+}
+
+.patterns-section .modal-body{
+    padding: 1% 5%;
+}
+
+.patterns-section .close-modal{
+    color: rgb(255, 0, 0);
+    float: right;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.patterns-section .close-modal:hover, .patterns-section .close-modal:focus{
+    color: rgb(241, 241, 95);
+    cursor: pointer;
+}
+
+.patterns-section .did-you-know:hover{
+    background-color: #56ccf2;
+}
+
+.patterns-section .did-you-know:active{
+    background-color: aqua;
+}
+
+/* Modal Animation */
+@-webkit-keyframes animatetop{              /* -webkit- for browsers that do not support animation */
+    from{top:-300px; opacity: 0;}
+    to{top:0; opacity: 1;}
+}
+
+@keyframes animatetop{
+    from{top:-300px; opacity: 0;}
+    to{top:0; opacity: 1;}
+}
+
+.named-tricks-outer-flexbox, .siteswap-tricks-outer-flexbox{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3em;
+}
+
+.cascade, .fountain, .six-three-three, .nine-seven-five-three-one{
+    display: flex;
+    margin: 1%;
+    width: 50%;
+    align-items: center;
+}
+
+.named-tricks-outer-flexbox p , .siteswap-tricks-outer-flexbox p{
+    color: rgb(165, 209, 187);
+    font-size: 1.3m;
+}
+
+.patterns-section figcaption{
+    font-size: 2em;
+    color: hsl(140, 100%, 67%);
+}
+
+/* Pattern Generator */
+.generator-header, .generator-box{
+    margin: 0 5%;
+}
+
+.generator-header{
+   color: #052a36;
+}
+
+.patterns-section .generator-figcaption{
+    color: black;
+}
+
+.generator-box{
+    display: flex;
+    border: 1px solid black;
+    background-color: wheat;
+    align-items: center;
+}
+
+.generator-text{
+    font-size: 1.5em;
+    line-height: 1.2;
+    margin: 5%;
+}
+
+.generator-gif{
+    border: 5px solid blueviolet;
+}
+
+#new-pattern{
+    background-color: #56ccf2;
+    font-size: 1.3em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+#new-pattern:hover{
+    background-color: #a8e3f7;
+}
+
+#new-pattern:active{
+    background-color: rgb(8, 43, 54);
+}
+
+
+/* props.html CSS*/
+
+.eye{
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 50%; /* Make a circle */
+    position: relative;
+    overflow: hidden;
+}
+
+
+.eyeball{
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    position: absolute;
+    top: 40%;
+    left: 30%;      /* Default look to "Free Shipping" */
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid rgb(46, 125, 161);
+}
+
+.content-section {
+    margin: 1em;
+} 
+
+.props-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    border-bottom: 5px solid black;
+}
+
+.props-container:last-child{
+    border: none;
+}
+
+.props-section h3{
+    margin: 6%;
+    margin-bottom: 0;
+    color: rgb(107, 52, 52);
+    font-size: 1.2em;
+}
+
+.shipping, .hover-zoom{
+    padding: auto;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    
+}
+
+.shipping{
+    animation-name: shipping-animation;
+    -webkit-animation-name: shipping-animation;
+    color: rgb(255, 0, 0);
+    position: absolute;
+}
+
+.hover-zoom{
+    animation-name: hover-zoom-animation;
+    -webkit-animation-name: hover-zoom-animation;
+    color: yellow;
+    font-size: 130%;
+}
+
+@keyframes shipping-animation{
+    from{font-size: 1.4em;}
+    to{font-size: 1.6em;}
+}
+
+@-webkit-keyframes shipping-animation{      /* -webkit- for browsers that do not support animation */
+    from{font-size: 1.4em;}
+    to{font-size: 1.6em;}
+}
+
+@keyframes hover-zoom-animation {       
+    from{transform: rotate(10deg);}
+    to{transform: rotate(-10deg);}
+}
+
+@-webkit-keyframes hover-zoom-animation{    /* -webkit- for browsers that do not support animation and transform */
+    from{transform: rotate(10deg);}
+    to{transform: rotate(-10deg);}
+}
+
+.shop-item{
+    margin: 2em;
+}
+
+.shop-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: .8em;
+}
+
+.shop-item-image{
+    width: 10em;
+    max-height: 7em;
+    border-radius: 5px;
+}   
+
+.shop-item-image:hover{
+    transform: scale(1.5);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.shop-item-details{
+    display: flex;  /* Able to center lines vertically */
+    align-items: center;
+    padding: .5em;
+}
+
+.shop-item-price{
+    flex-grow: 1; /* Makes price take up as much width as possible */
+    color: #333;
+}
+
+.shop-items{
+    display: flex; /*Puts the whole div on one line */
+    flex-wrap: wrap; /* If element goes past screen, it'll wrap down */
+    justify-content: space-around; /* Puts an even amount of space on the left and right of each element inside the div */
+}
+
+.shop-item-button{
+    border-radius: 5px;
+    background-color: lightgreen
+}
+
+.shop-item-button:hover{
+    background-color: #58b65c;
+}
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: .8em;
+    margin-top: .8em;
+}
+
+.cart-row{
+    display: flex;
+}
+
+.cart-item{
+    width: 45%;
+}
+
+.cart-price{
+    width: 20%;
+    font-size: 1.2em;
+}
+
+.cart-quantity{
+    width: 35%;
+}
+
+.cart-item-title{
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image{
+    width: 4em;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-remove{
+    color: white;
+    background-color: #eb5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-remove:hover{
+    background-color: #cc4c4c;
+}
+
+.cart-quantity-input{
+    height: 2em;
+    width: 3em;
+    margin-right: .5em;
+    border-radius: 5px;
+    border: 1px #56ccf2 solid;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.cart-row:last-child{    /* Last child of cart-items container */
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column{
+    border: none;
+}
+
+.cart-total{
+    text-align: end; 
+    margin-top: .8em;
+    margin-right: .8em;
+}
+
+.cart-total-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+.cart-total-price{
+    font-size: 1.1em;
+}
+
+.btn-purchase{
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.5em;
+    background-color:#56ccf2;
+    border-radius: 5px;
+}
+
+.btn-purchase:hover{
+    background-color:#a8e3f7;
+}
+
+
+/* Responsive Media Queries */
+
+/* ADD COMMENTS */
+
+@media (max-width: 1030px){
+    .jugglers-items{        /* jugglers.html */
+        display: inline-block
+    }
+
+    .cascade, .fountain, .six-three-three, .nine-seven-five-three-one{      /*patterns.html */
+        flex-direction: column;                 
+    }
+}
+
+@media (max-width: 800px) {
+    @keyframes shipping-animation{          /* Change font size of animation of 'shipping' header in props.html */
+        from{font-size: 1em;}
+        to{font-size: 1.2em;}
+    }
+    
+    @-webkit-keyframes shipping-animation{     
+        from{font-size: 1.4em;}
+        to{font-size: 1.6em;}
+    }
+
+}
+
+/* Adding repsonsive media queries to items that start to break at 670px */
+@media (max-width: 670px){
+    .main-footer-container{     /* Footer */
+        flex-wrap: wrap;        /* Allow items in footer to wrap */
+    }
+    .home-grid-container{       /* index.html grid container */
+        display: flex;
+        flex-wrap: wrap;        /* Change items in grid to a flex layout and allow wrapping */
+    }
+    .home-grid-item-1{
+        overflow-y: hidden;      /* Hides the scrollbar as all content is now displayed (no need for scrollbar) */
+    }
+
+    .home-grid-item-2, .home-grid-item-3, .home-grid-item-4, .home-grid-item-5{
+        width: 70%;
+    }
+
+    .prev-slide, .next-slide, .slide-caption{
+        color: rgba(255,255,255,.8);       /* Adds transparency when over images */
+    }
+
+    .prev-slide, .next-slide{               /* image carousel of index.html */
+        font-size: 2em;
+    }
+
+    .slide-caption{                         /* image carousel of index.html */
+        font-size: 1.5em;
+    }
+
+    .generator-box{
+        flex-direction: column;             /* description of pattern in pattern generator container */
+    }
+}
+
+@media (max-width: 490px){
+    .newsletter{
+        font-size: 3em;       /* Decreases size of 'newsletter' heading */
+    }
+
+    .jugglers-navbar div{
+        font-size: .6em;
+    }
+
+    .named-tricks-outer-flexbox, .siteswap-tricks-outer-flexbox{
+        flex-wrap: wrap;
+    }
+
+    .named-tricks-outer-flexbox p, .siteswap-tricks-outer-flexbox p{
+        width: 150%;
+    }
+
+    .shipping{
+        animation-play-state: paused;   /* Stop animation */
+        position: relative;         /* Change position to be relative */
+    }
+
+    .eyeball{               
+        top: 15%;
+        left: 50%;              /* Eyeballs now look upwards at 'shipping' header by default */
+    }
+
+    .cart-items{
+        font-size: .7em;
+    }
+}
+
+@media (max-width: 410px){
+    .slide-caption{
+        display: none;          /* Hides caption when index.html carousel is too small */
+    }
+
+    .wr-table td > img{
+        display: none;          /* Hides flags of records.html*/
+    }
+
+    .wr-table{
+        font-size: .8em;      
+    }
+
+    .jugglers-nav iframe{
+        display: none;          /* Hide Youtube video on jugglers.html */
+    }
+
+    .jugglers-nav .video-link{
+        display: block;         /* Display link to Youtube video for jugglers.html */  
+    }
+
+}
+
+@media (max-width: 350px){
+    audio{
+        display: none;          /* Hides audio bar on index.html*/
+    }
+}

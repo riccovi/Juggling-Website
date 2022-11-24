@@ -1,0 +1,208 @@
+<!DOCTYPE html> <!--Tells the browser to use the most up to date version of HTML.-->
+
+<html lang="en" dir="ltr"> <!-- Language = English, Direction = left to right. -->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Juggling Newsletter - Props </title> <!-- The title of the webpage. -->
+    <meta name="description" content="Your #1 resource for all things juggling!">       <!-- Description of web page-->
+    <meta name="author" content="Ricco Visser ">   <!-- Author -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links to the css page. -->
+    <script src="script.js" async defer></script> <!-- Links to the javascript page. Because we defer, it works as if we placed the script below our body. Script loads immediately instead of waiting for all the html to load. -->
+    <meta name="refresh" content="600"> <!--Refresh content every 600 seconds-->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+  </head>
+
+  <body>
+
+    <header class="main-header"> <!-- Everything in the header-->
+        <nav class="nav main-nav"> <!-- Navigation Section for header-->
+          <ul> <!-- Unordered List-->
+            <!-- List Items: -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="records.html">World Records</a></li> 
+            <li><a href ="jugglers.html">Jugglers</a></li>
+            <li><a href ="patterns.html">Patterns</a></li> 
+            <li><a href ="props.html">Props</a></li>
+          </ul>
+        </nav>  <!-- End of navigation section for header-->
+        <h1 class = "newsletter newsletter-large"> The Juggling Newsletter</h1> <!-- The main title, in the header-->
+        <!-- Change font size - Increase web accessibility. Located in header for easy visibility.-->
+          <div class="adjust-a"> <!-- Container for "A's" -->
+            <h3 class="small-a">A</h3>
+            <h2 class="medium-a">A</h2>
+            <h1 class="big-a">A</h1>
+          </div>  <!-- End of "A's" container-->
+      </header> <!-- End of header-->
+    
+    <section class="props-section"> <!-- Container section of all of props.html. (Excluding header and footer)-->
+        <div class="shipping">Free International Shipping!</div>
+
+        <!-- Adapted Code: DarkCode, 'Eyes follow mouse cursor using HTML CSS & Javascript', 2019. [Online]. Available: https://youtu.be/AixAmLWzXYg. [Accessed: 4- Sep- 2022] -->
+        <!-- Eyes tracking mouse movement -->
+        <div class="eyes"> <!-- a div for 2 eyes-->
+            <div class="eye"> <!-- a div for a single eye. styled by css-->
+                <div class="eyeball"></div>
+            </div>
+            <div class="eye">
+                <div class="eyeball"></div>
+            </div>
+        </div> <!-- End of eyes div-->
+
+        <section class="props-container"> <!-- Inner section. Buying Juggling Props-->
+            <h1>Buy some props!</h1>
+            <p>There are 3 main juggling props. The balls can range from 60-90mm in diameter and 70-110g in weight. Most of them have a seed filling with a 4-panel sewing. The clubs consist of a body and handle, and are a great way to step-up your juggling! The rings are, well rings! Made with plastic and love &#128512;<p>
+            <h3>Russian balls have an outer plastic shell, with sand, salt or grain inside. The unique weight gives a more stable direction when thrown and is great for balancing tricks. The thud balls are a bit smaller and lighter, coming in at 70g and 62mm. They don't roll away when dropped, but rather make a 'thud'!</h3>
+            
+            <div class ="shop-items"> <!-- Balls. Flex container with 2 items-->
+
+                <div class ="shop-item"> <!-- Russian Balls. Flex Item 1 -->
+                    <span class="shop-item-title"> Russian Balls</span>
+                    <img class="shop-item-image" src="images/props/russianballs.jpg" alt="Russian Balls" loading="lazy">
+                    <div class="shop-item-details"> <!-- Inline div-->
+                        <span class="shop-item-price">£6.50</span>
+                        <button class="btn shop-item-button" role="button">Add to Cart</button>
+                    </div>
+                </div> <!-- End of flex item 1-->
+
+                <div class ="shop-item">    <!-- Thud Balls. Flex Item 2 -->
+                    <span class="shop-item-title">Thud Balls</span>
+                    <img class="shop-item-image" src="images/props/thudballs.jpg" alt="Thud Balls" loading="lazy">
+                    <div class="shop-item-details"> <!-- Inline div-->
+                        <span class="shop-item-price">£5.99</span>
+                        <button class="btn shop-item-button" role="button">Add to Cart</button>
+                    </div>
+                </div> <!-- End of flex item 2-->
+            </div> <!-- End of flex container -->
+
+            <h3>Henry's clubs are one of the most-used and well-made clubs. If you're looking for the best of the best. Henry's it is! On the other hand, if impressing others is your only goal, these LED clubs are for you! They are slightly heavier, but they look great, (especially at night time) and is sure to impress!</h3> 
+            <div class ="shop-items"> <!-- Clubs. Flex container with 2 items-->
+                <div class ="shop-item"> <!-- Henry's Clubs. Flex Item 1-->
+                    <span class="shop-item-title"> Henry's Clubs </span>
+                    <img class="shop-item-image" src="images/props/henrysclubs.jpg" alt="Henry's Clubs" loading="lazy">
+                    <div class="shop-item-details"> <!-- Inline div-->
+                        <span class="shop-item-price">£15.99</span>
+                        <button class="btn shop-item-button" role="button">Add to Cart</button>
+                    </div> 
+                </div> <!-- End of flex item 1-->
+
+                <div class ="shop-item"> <!-- LED Clubs. Flex Item 2-->
+                    <span class="shop-item-title"> LED Clubs </span>
+                    <img class="shop-item-image" src="images/props/ledclubs.jpg" alt="LED CLubs" loading="lazy">
+                    <div class="shop-item-details"> <!-- Inline div-->
+                        <span class="shop-item-price">£33</span>
+                        <button class="btn shop-item-button" role="button">Add to Cart</button>
+                    </div>
+                </div> <!-- End of flex item 2-->
+            </div> <!-- End of flex container -->
+
+            <h3>32cm in diameter, 4mm thick and a weight of 98g. These plastic rings are the standard for beginners, and can be perfectly juggled without putting a hole in your pocket! Similar to the LED clubs however, if style is the name of the game, then these LED rings are a must-get!</h3>
+            <div class ="shop-items"> <!-- Rings. Flex container with 2 items --> 
+                <div class ="shop-item"> <!-- Plastic Rings. Flex Item 1-->
+                    <span class="shop-item-title"> Plastic Rings </span>
+                    <img class="shop-item-image" src="images/props/plasticrings.jpg" alt="Plastic Rings" loading="lazy">
+                    <div class="shop-item-details"> <!-- Inline div-->
+                        <span class="shop-item-price">£4.99</span>
+                        <button class="btn shop-item-button" role="button">Add to Cart</button>
+                    </div>
+                </div> <!-- End of flex item 1-->
+
+                <div class ="shop-item"> <!-- Hexagonal Rings. Flex Item 2-->
+                    <span class="shop-item-title"> LED Rings </span>
+                    <img class="shop-item-image" src="images/props/ledrings.jpg" alt="LED Rings" loading="lazy">
+                    <div class="shop-item-details"> <!-- Inline div-->
+                        <span class="shop-item-price">£17.50</span>
+                        <button class="btn shop-item-button" role="button">Add to Cart</button>
+                    </div>
+                </div> <!-- End of flex item 2-->
+            </div> <!-- End of flex container -->
+        </section> <!-- End of buying props section-->
+            
+        <section class="props-container content-section">   <!-- Inner section. Buying Juggling Merch-->
+            <p>We have Juggling Merch as well. Be proud that you're a juggler and show it to the world!</p>
+            <div class="hover-zoom">Hover over images to zoom in!</div>
+            <h3>Need a new t-shirt or juggling in the heat? Make sure you represent your love of juggling with this sweet apparel! Available for a limited time only!</h3>
+            
+            <div class ="shop-items"> <!-- Flex container with 3 items-->
+                <div class ="shop-item"> <!-- 'Repeat' T-Shirt. Flex Item 1-->
+                    <span class="shop-item-title"> Repeat T-Shirt</span>
+                    <img class="shop-item-image" src="images/props/blackonwhiteshirt.jpg" alt="'Eat. Sleep. Juggle. Repeat' T-Shirt" loading="lazy">
+                    <div class="shop-item-details"> <!-- Inline div-->
+                        <span class="shop-item-price">£7.99</span>
+                        <button class="btn shop-item-button" role="button">Add to Cart</button>
+                    </div>
+                </div> <!-- End of flex item 1-->
+
+                <div class ="shop-item">    <!-- 'Juggle' T-Shirt. Flex Item 2-->
+                    <span class="shop-item-title">Juggle T-Shirt</span>
+                    <img class="shop-item-image" src="images/props/whiteonblackshirt.jpg" alt="'Man juggling 4 clubs with black background' T-Shirt" loading="lazy">
+                    <div class="shop-item-details"> <!-- Inline div-->
+                        <span class="shop-item-price">£7.99</span>
+                        <button class="btn shop-item-button" role="button">Add to Cart</button>
+                    </div>
+                </div> <!-- End of flex item 2-->
+
+                <div class ="shop-item">    <!-- Juggling Hat. Flex Item 3-->
+                    <span class="shop-item-title">Juggling Hat</span>
+                    <img class="shop-item-image" src="images/props/jugglinghat.webp" alt="Juggling Hat" loading="lazy">
+                    <div class="shop-item-details"> <!-- Inline div-->
+                        <span class="shop-item-price">£6</span>
+                        <button class="btn shop-item-button" role="button">Add to Cart</button>
+                    </div>
+                </div> <!-- End of flex item 3-->
+            </div> <!-- End of flex container -->
+        </section> <!-- End of buying merch section-->
+
+        <section class = "container content-section">   <!-- Inner section. Checkout/Cart-->
+            <h2>Cart</h2>
+            <div class="cart-row"> <!-- Headings -->
+                <span class="cart-item cart-header cart-column">Item</span>
+                <span class="cart-price cart-header cart-column">Price</span>
+                <span class="cart-quantity cart-header cart-column">Quantity</span>
+            </div>
+
+            <div class="cart-items"> <!-- Cart Items. Items added when user selects an item-->
+            </div>
+
+            <div class="cart-total ">   <!-- Total Price-->
+                <strong class="cart-total-title">Total:</strong>
+                <span class="cart-total-price">£0</span>
+            </div> 
+
+            <!-- Purchase Button-->
+            <button class="btn btn-purchase" role="button">Purchase </button>
+
+        </section> <!-- End of checkout section-->
+    </section> <!-- End of props.html section-->
+
+    <!-- Footer Container-->
+    <footer class="main-footer">
+        <div class="container main-footer-container"> <!-- Flex container with 4 items-->
+          <h3 class = "newsletter"> The Juggling Newsletter</h3>
+          <h3 class = "follow"> Follow us to keep track of the latest juggling news! </h3>
+          <ul class="nav footer-nav"> <!-- Social Media container. Contains Facebook/Instagram/Twitter Logos and external links-->
+            <li><a href="https://www.flaticon.com/free-icons/facebook" title="facebook icon" target="_blank">
+              <img src="images/facebook logo.png" alt="Image of Facebook's logo."> <!-- Facebook icons created by Freepik - Flatico-->
+            </a></li>
+            <li><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icon" target="_blank">
+              <img src="images/instagram logo.png" alt="Image of Instagram's logo."> <!-- Instagram icons created by Freepik - Flatico-->
+            </a></li>
+            <li><a href="https://www.flaticon.com/free-icons/twitter" title="twitter icon" target="_blank">
+              <img src="images/twitter logo.png" alt="Image of Twitter's logo."> <!-- Twitter icons created by Freepik - Flatico-->
+            </a></li>
+          </ul> <!-- End of Social Media container-->
+          <div> <!-- Container of 4th item, having address tags for contact information.  -->
+            <address> Come join us every Friday at <time>14:00</time>! </address> <!-- <time> tag allows calender integration-->
+            <address>3 Cawthorne Ave, Pasadena, South Australia</address>
+            <address><a href="mailto:infoinfo@jugglingnewsletter.com">Send Email</a></address> <!-- Automatically opens email-->
+          </div> <!-- End of 4th item container-->
+        </div> <!-- End of flex container -->
+    </footer> <!-- End of footer and body-->
+  
+    </body>
+  
+  </html>

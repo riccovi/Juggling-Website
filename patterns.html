@@ -1,0 +1,154 @@
+<!DOCTYPE html> <!--Tells the browser to use the most up to date version of HTML.-->
+
+<html lang="en" dir="ltr"> <!-- Language = English, Direction = left to right. -->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Juggling Newsletter - Patterns </title> <!-- The title of the webpage. -->
+    <meta name="description" content="Your #1 resource for all things juggling!">       <!-- Description of web page-->
+    <meta name="author" content="Ricco Visser ">   <!-- Author -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links to the css page. -->
+    <script src="script.js" defer></script> <!-- Links to the javascript page. Because we defer, it works as if we placed the script below our body. Script loads immediately instead of waiting for all the html to load. -->
+    <meta name="refresh" content="600"> <!--Refresh content every 600 seconds-->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+  </head>
+
+  <body>
+
+    <header class="main-header"> <!-- Everything in the header-->
+      <nav class="nav main-nav"> <!-- Navigation Section for header-->
+        <ul> <!-- Unordered List-->
+          <!-- List Items: -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="records.html">World Records</a></li> 
+          <li><a href ="jugglers.html">Jugglers</a></li>
+          <li><a href ="patterns.html">Patterns</a></li> 
+          <li><a href ="props.html">Props</a></li>
+        </ul>
+      </nav>  <!-- End of navigation section for header-->
+      <h1 class = "newsletter newsletter-large"> The Juggling Newsletter</h1> <!-- The main title, in the header-->
+      <!-- Change font size - Increase web accessibility. Located in header for easy visibility.-->
+        <div class="adjust-a"> <!-- Container for "A's" -->
+          <h3 class="small-a">A</h3>
+          <h2 class="medium-a">A</h2>
+          <h1 class="big-a">A</h1>
+        </div>  <!-- End of "A's" container-->
+    </header> <!-- End of header-->
+
+    <section class="patterns-section"> <!-- Container section of all of patterns.html. (Excluding header and footer)-->
+     
+      <h1> Patterns</h1>
+      <p>There are thousands of different juggling patterns out there! We've listed a few main ones here, but feel free to explore and let your creativity invent never-before-seen tricks!</p>
+      
+      <div class="did-you-know">Did you know?</div> <!-- Button that brings up modal-->
+      
+      <!-- Adapted Code: w3Schools, 'How TO - CSS/JS Modal', 2022. [Online]. Available: https://www.w3schools.com/howto/howto_css_modals.asp. [Accessed: 4- Sep- 2022]-->
+      <!-- Modal-->
+      <div class="dyk-modal"> <!-- Modal container-->
+        <div class="modal-content"> <!-- modal container for inner content-->
+          <div class="modal-header"> <!-- modal container for header content-->
+            <span class="close-modal">X</span>
+            <h2>Did you know?</h2>
+          </div> <!-- End of modal header-->
+          <div class="modal-body"> 
+            <p>There are 2 main types of patterns. Those represented with names, and those represented with siteswap!</p>
+          </div> <!-- End of modal body-->
+        </div> <!-- End of modal content-->
+      </div> <!-- End of modal container-->
+
+      <div class="patterns-names"> <!-- container for 'named tricks' -->
+        <h2> Named Tricks </h2>
+        <p>Named Tricks are the most common, basic and popular tricks that are done. For ease of communication, jugglers came up with names for each one!</p>
+        <div class="named-tricks-outer-flexbox"> <!-- flex container with 2 items-->
+          <div class="cascade"> <!-- flex item 1-->
+            <figure>
+              <img src="images/gifs/cascadegif.webp" alt="gif of the cascade pattern" loading="lazy">
+              <figcaption>Cascade</figcaption>
+            </figure>
+            <p>The 'Cascade' is the most common, easiest and generic juggling pattern. It's the first juggling pattern anyone learns, and it consists of each hand throwing in an even, alternating rhythm. The cascade can only be juggled with an odd amount of props.</p>
+          </div>
+          <div class="fountain"> <!-- flex item 2-->
+            <figure>
+              <img src="images/gifs/fountain.webp" alt="gif of the fountain pattern" loading="lazy">
+              <figcaption>Fountain</figcaption>
+            </figure>
+            <p>The most generic pattern for even-numbered props. The props don't actually switch hands, but rather each hand juggles separately.</p>
+          </div>
+        </div> <!-- end of flex container-->
+      </div> <!-- end of container for 'named tricks'-->
+
+      <div class="patterns-siteswap"> <!-- container for 'siteswap tricks' -->
+        <h2> Siteswap Tricks </h2>
+        <p> For patterns that don't have names, siteswap is used! Siteswap is the mathematical representation of a juggling pattern using numbers! Each individual digit represents a certain beat of the juggling pattern. It's confusing at first, but you'll soon get the knack of it!</p>
+        <div class="siteswap-tricks-outer-flexbox"> <!-- flex container with 2 items-->
+          <div class="six-three-three"> <!-- flex item 1 -->
+            <figure>
+              <img src="images/gifs/633.webp" alt="gif of the siteswap 6 3 3 " loading="lazy">
+              <figcaption>633</figcaption>
+            </figure>
+            <p>633 is a common siteswap to begin with. One juggles 4 balls, throws 1 up, quickly juggles 3 underneath, then goes back into a 4 ball pattern. Keep practicing until you can do an infinite cycle!</p>
+          </div>
+          <div class="nine-seven-five-three-one"> <!-- flex item 2-->
+            <figure>
+              <img src="images/gifs/97531.webp" alt="gif of the siteswap 9 7 5 3 1" loading="lazy">
+              <figcaption>97531</figcaption>
+            </figure>
+            <p>9751 is a visually stunning but incredibly difficult trick. Each ball is thrown lower than the previous one, making the first ball you throw, the last you catch. Strength, accuracy and a strong neck is needed for this one!</p>
+          </div>
+        </div> <!-- end of flex container -->
+      </div> <!-- end of container for 'siteswap tricks'-->
+
+      <!-- Random Pattern Generator -->
+      <div class="generator-container" > <!-- random pattern generator container-->
+        <div class="generator-header">
+          <h2>Random Pattern Generator</h2>
+        </div>
+
+        <div class="generator-box"> <!-- inner flex container with 2 items-->
+          <figure>
+            <div><img class="generator-gif" src="images/gifs/cascadegif.webp" alt="gif of the cascade pattern" loading="lazy"></div>
+            <figcaption class="generator-figcaption">Cascade</figcaption>
+          </figure>
+          <div class="generator-text">
+            <span class="generator-description">The 'Cascade' is the most common, easiest and generic juggling pattern. It's the first juggling pattern anyone learns, and it consists of each hand throwing in an even, alternating rhythm. The cascade can only be juggled with an odd amount of props.</span>
+          </div>
+        </div> <!-- end of flex container-->
+
+        <div class="generator-button"> <!-- button for generating a new pattern-->
+          <button type="button" id="new-pattern"> New Pattern</button>
+        </div>
+      </div>
+
+    </section> <!-- end of patterns.html section-->
+
+    <!-- Footer Container-->
+    <footer class="main-footer">
+      <div class="container main-footer-container"> <!-- Flex container with 4 items-->
+        <h3 class = "newsletter"> The Juggling Newsletter</h3>
+        <h3 class = "follow"> Follow us to keep track of the latest juggling news! </h3>
+        <ul class="nav footer-nav"> <!-- Social Media container. Contains Facebook/Instagram/Twitter Logos and external links-->
+          <li><a href="https://www.flaticon.com/free-icons/facebook" title="facebook icon" target="_blank">
+            <img src="images/facebook logo.png" alt="Image of Facebook's logo."> <!-- Facebook icons created by Freepik - Flatico-->
+          </a></li>
+          <li><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icon" target="_blank">
+            <img src="images/instagram logo.png" alt="Image of Instagram's logo."> <!-- Instagram icons created by Freepik - Flatico-->
+          </a></li>
+          <li><a href="https://www.flaticon.com/free-icons/twitter" title="twitter icon" target="_blank">
+            <img src="images/twitter logo.png" alt="Image of Twitter's logo."> <!-- Twitter icons created by Freepik - Flatico-->
+          </a></li>
+        </ul> <!-- End of Social Media container-->
+        <div> <!-- Container of 4th item, having address tags for contact information.  -->
+          <address> Come join us every Friday at <time>14:00</time>! </address> <!-- <time> tag allows calender integration-->
+          <address>3 Cawthorne Ave, Pasadena, South Australia</address>
+          <address><a href="mailto:infoinfo@jugglingnewsletter.com">Send Email</a></address> <!-- Automatically opens email-->
+        </div> <!-- End of 4th item container-->
+      </div> <!-- End of flex container -->
+    </footer> <!-- End of footer and body-->
+  
+    </body>
+  
+  </html>
