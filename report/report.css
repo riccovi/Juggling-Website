@@ -1,0 +1,59 @@
+* {         
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+html, body{     
+    margin: 0;          
+    padding: 0;
+}
+
+h1{
+    color: black;
+    margin: 0;
+    padding: .7em;
+    font-size: 2.5em;
+    padding-top: 0;
+}
+
+h2{
+    color:rgb(148, 74, 5);
+}
+
+p, li{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin: 3em 0;
+}
+
+.resources li{
+    font-size: 1.2em;
+}
+
+section{
+    background-color: rgb(187, 142, 84);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+div{
+    border: 1px black solid;
+    margin: 5em;
+    padding: 5em;
+    background-color: rgb(65, 209, 113);
+}
+
+div > h1{
+    color: rgb(0, 17, 255);
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    margin: 1em;
+}
